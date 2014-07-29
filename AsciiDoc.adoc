@@ -1,0 +1,9 @@
+== AsciiDoc Notes
+
+'''
+
+* icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+* icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
+* icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
+
+Document generated with Asciidoctor {asciidoctor-version}.
