@@ -1,9 +1,60 @@
-== AsciiDoc Notes
+= AsciiDoc
+
+* link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
+* link:Ruby.adoc[Ruby Setup]
+* link:TestAsciiDoc.adoc[Test Page]
+
 
 '''
 
 * icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
 * icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
 * icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
+
+
+== AsciiDoc Notes
+
+=== AsciiDoc
+
+* AsciiDoc 8.6.9
+** requires Python.
+** I've used this on Linux
+
+=== Asciidoctor things I've tried
+
+* Asciidoctor
+** Generates .html, .ePUB, slide decks
+*** link:testasciidoc_icons_font.html[HTML generated with icons from font awesome]
+*** link:testasciidoc-a_font.html[HTML generated with icons as images]
+*** link:testasciidoc-default.html[HTML generated with no icons]
+
+* Asciidoctor-decks
+** Create slide shows with deck.js or reveal.js
+** NOTE: deck.js is more developed than reveal at this time.
+* Asciidoctor-diagram
+** creates images from text diagrams
+** I have not figured this one out.
+* Asciidoctor-epub3
+** Creates an epub file
+* Asciidoctor-stylesheet-factor
+** generates Asciidoctor .css files
+
+=== AsciiDoc Editor | Viewer
+
+* ATOM editor
+** AsciiDoc-Preview. Best *editor | viewer* I've found.
+* AsciiDocBox
+** This is an HTML *editor | viewer* similar to what we are building.
+* Asciidoctor-chrome-extention
+** *Viewer only* works fantastic, includes themes
+* Sublime Text
+** Viewer
+** Editor has an AsciiDoc syntax highlighter, but it only works with some of the themes.
+* Brackets
+** The Brackets.io editor has a new AsciiDocs preview plugin (5/16/2014)
+** now supports syntax highlighting and admonition icons and themes.
+** Splits screen horizontally :(
+
+'''
 
 Document generated with Asciidoctor {asciidoctor-version}.

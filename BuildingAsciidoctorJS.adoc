@@ -1,0 +1,43 @@
+|=======================
+|link:index.adoc[Home]|link:EditorSetupForAsciiDoc.adoc[Editor Setup]|link:Ruby.adoc[Ruby Setup]|link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]|link:TestAsciiDoc.adoc[Test Page]
+|=======================
+
+= Building Asciidoctor.js
+
+Follow instructions here: http://asciidoctor.org/docs/install-and-use-asciidoctorjs/
+
+This is what I did and the obstacles I ran into.
+
+* git clone ...asciidoctor.js
+* switch to asciidoctor.js directory
+* bundle install
+
+IMPORTANT: Did not have Bundler
+
+From command prompt, install Bundler.
+
+* `gem install bundler`
+** http://bundler.io/[for more info: Bundler]
+
+
+IMPORTANT: Did not have JSON
+
+* Go to http://rubyinstaller.org/downloads/
+* download Development Kit for Ruby 1.9.3
+* follow instructions https://github.com/oneclick/rubyinstaller/wiki/Development-Kit[Development Kit]
+** Extract to a directory
+** CD to that
+** run `ruby dx.rb init`
+** run `ruby dk.rb install`
+
+.Try Again
+* run `bundle install` again. This time it worked.
+
+Now you are ready to build Asciidoctor.js
+
+* run `rake dist`
+
+* run `rake examples`
+
+Point your browser at build/asciidoctor_example.html. You should see the AsciiDoc Syntax Quick Reference document. The content on the page was rendered from AsciiDoc by asciidoctor.js when you loaded the page!
+

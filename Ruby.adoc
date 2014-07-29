@@ -1,0 +1,62 @@
+|=======================
+|link:index.adoc[Home]|link:EditorSetupForAsciiDoc.adoc[Editor Setup]|link:Ruby.adoc[Ruby Setup]|link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]|link:TestAsciiDoc.adoc[Test Page]
+|=======================
+
+= Ruby setup for generating HTML
+
+
+so, this may not be scalable to most people at CIS, but I just downloaded ruby and the ruby gem "asciidoctor" and it was super easy to convert the test adoc you had created to html5
+
+=== Install Ruby and Asciidoctor
+____
+amazingly easy to install ruby and asciidoc, it literally took 1 minute
+- Ben Funkhouser
+____
+
+
+1. Download 1.9.3 and check the bottom two options in the installer
+http://rubyinstaller.org/downloads/
+* Select English
+* Accept EULA
+* Installation Destination and Optional Tasks
+** c:\Ruby193
+** select: Add Ruby executables to your PATH
+** select: Associate .rb and .rbw files with this Ruby installation
+
+2. run this command from anywhere
+   `gem install asciidoctor`
+3. cd to the directory with an adoc and run this command:
+	`asciidoctor docname.adoc` 
+	
+That's all there is to it
+
+TIP: to get the Admonition icons to display instead of the word, place `:icons: font` at the top of your doc and re-run the `asciidoctor docname.adoc` command.
+
+=== Asciidoctor stylesheet factory
+
+You can generate HTML with Ruby Asciidoctor and add in these stylesheets or make your own.
+
+https://github.com/asciidoctor/asciidoctor-stylesheet-factory[Asciidoctor stylesheet factory]
+
+* download the zip file and unzip to a directory
+
+* Setup and compilation
+** `gem install --version '0.12.3' compass`
+** `gem install --version '4.3.2' zurb-foundation`
+
+* CD to the unzipped directory
+
+* Build the stylesheets
+`compass compile`
+
+* Then, use AsciiDoc or Asciidoctor to generate HTML that uses one of the stylesheets from the stylesheets/ directory:
+
+** `asciidoctor -a stylesheet=./stylesheets/asciidoctor.css sample.adoc`
+** sample.adoc needs to be in this directory or you'll need to add the path.
+
+* browse newly created sample.html file
+
+NOTE: See readme for details, options and how to create a new theme.
+
+=== Installing and Using Asciidoctor.js
+http://asciidoctor.org/docs/install-and-use-asciidoctorjs/
