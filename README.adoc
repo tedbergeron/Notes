@@ -2,5 +2,5 @@
 
 This repo contains notes
 
-* link:AsciiDoc.adoc[AsciiDoc]
+* link:AsciiDoc/AsciiDoc.adoc[AsciiDoc]
 * link:http://rogerdudler.github.io/git-guide/[git-guide]
