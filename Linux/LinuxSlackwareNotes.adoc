@@ -7,3 +7,5 @@
 * makepkg /home/KeePass.tgz
 
 * installpkg KeePass.tgz
+
+=== Git was installed in Slackware
