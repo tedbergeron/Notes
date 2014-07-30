@@ -1,16 +1,14 @@
-|=======================
-|link:index.adoc[Home]|link:EditorSetupForAsciiDoc.adoc[Editor Setup]|link:Ruby.adoc[Ruby Setup]|link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]|link:TestAsciiDoc.adoc[Test Page]
-|=======================
-
 = Ruby setup for generating HTML
 
-
-so, this may not be scalable to most people at CIS, but I just downloaded ruby and the ruby gem "asciidoctor" and it was super easy to convert the test adoc you had created to html5
+____
+so, this may not be scalable to most people, but I just downloaded ruby and the ruby gem "asciidoctor" and it was super easy to convert the test adoc you had created to html5
+- Ben
+____
 
 === Install Ruby and Asciidoctor
 ____
 amazingly easy to install ruby and asciidoc, it literally took 1 minute
-- Ben Funkhouser
+- Ben
 ____
 
 
@@ -26,8 +24,8 @@ http://rubyinstaller.org/downloads/
 2. run this command from anywhere
    `gem install asciidoctor`
 3. cd to the directory with an adoc and run this command:
-	`asciidoctor docname.adoc` 
-	
+	`asciidoctor docname.adoc`
+
 That's all there is to it
 
 TIP: to get the Admonition icons to display instead of the word, place `:icons: font` at the top of your doc and re-run the `asciidoctor docname.adoc` command.

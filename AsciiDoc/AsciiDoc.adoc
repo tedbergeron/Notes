@@ -36,25 +36,27 @@
 ** I have not figured this one out.
 * Asciidoctor-epub3
 ** Creates an epub file
-** asciidoctor -r asciidoctor-epub3 -b epub3 sample-book.adoc
+** `asciidoctor -r asciidoctor-epub3 -b epub3 sample-book.adoc`
 * Asciidoctor-stylesheet-factor
 ** generates Asciidoctor .css files
 
 === AsciiDoc Editor | Viewer
 
 * ATOM editor
-** AsciiDoc-Preview. Best *editor | viewer* I've found.
-* AsciiDocBox
-** This is an HTML *editor | viewer* similar to what we are building.
-* Asciidoctor-chrome-extention
-** *Viewer only* works fantastic, includes themes
+** AsciiDoc-Preview package. Best *editor | viewer* I've found.
 * Sublime Text
-** Viewer
+** *editor | viewer*
 ** Editor has an AsciiDoc syntax highlighter, but it only works with some of the themes.
 * Brackets
+** *editor | viewer*
 ** The Brackets.io editor has a new AsciiDocs preview plugin (5/16/2014)
 ** now supports syntax highlighting and admonition icons and themes.
 ** Splits screen horizontally :(
+* Asciidoctor-chrome-extention
+** *Viewer only* works fantastic, includes themes
+* AsciiDocBox
+** This is an HTML *editor | viewer* similar to what we are building.
+
 
 '''
 

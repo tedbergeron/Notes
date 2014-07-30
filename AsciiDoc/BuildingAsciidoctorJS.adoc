@@ -1,7 +1,3 @@
-|=======================
-|link:index.adoc[Home]|link:EditorSetupForAsciiDoc.adoc[Editor Setup]|link:Ruby.adoc[Ruby Setup]|link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]|link:TestAsciiDoc.adoc[Test Page]
-|=======================
-
 = Building Asciidoctor.js
 
 Follow instructions here: http://asciidoctor.org/docs/install-and-use-asciidoctorjs/
@@ -40,4 +36,3 @@ Now you are ready to build Asciidoctor.js
 * run `rake examples`
 
 Point your browser at build/asciidoctor_example.html. You should see the AsciiDoc Syntax Quick Reference document. The content on the page was rendered from AsciiDoc by asciidoctor.js when you loaded the page!
-
