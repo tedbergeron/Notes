@@ -1,0 +1,9 @@
+== Linux Slackware NOTES
+
+=== Install tar.gz file
+
+* Extract to a dir
+* open a command prompt in dir
+* makepkg /home/KeePass.tgz
+
+* installpkg KeePass.tgz
