@@ -8,4 +8,9 @@
 
 * installpkg KeePass.tgz
 
-=== Git was installed in Slackware
+=== Software installed with Slackware
+* Git
+* Chromium?
+** needed to install the AsciiDoc Preview
+* Tor Browser
+* Thunderbird

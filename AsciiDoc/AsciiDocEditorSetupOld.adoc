@@ -1,0 +1,142 @@
+= Editor Setup for Writing AsciiDoc
+:icons: font
+ 
+
+This explains how to use a text editor and web browser to write and preview AsciiDoc text documents.
+
+ 
+
+ 
+
+== Add syntax highlighter to Notepad++
+
+ 
+Download the *userDefineLang.xml* from here:
+
+https://github.com/edusantana/asciidoc-highlight
+
+ 
+
+Place in your directory
+
+ C:\Users\tbergeron\AppData\Roaming\Notepad++
+
+ 
+
+To use, open a text doc with AsciiDoc extension. .adoc, .asc, .asciidoc
+
+ 
+
+e.g. *example.adoc*. _I know .adoc works. I have not tested the other file extensions_
+
+ 
+
+=== Troubleshooting Notepad++
+
+ 
+
+.If you already have a userDefineLang.xml file
+
+IMPORTANT: If you have multiple user defined languages, you can renamed the file: userDefineLang_AsciiDoc.xml
+
+_
+
+ 
+
+.In Notepad++
+
+* Language > Define you own language
+
+* ... more help needed here... All I have is Language > User Defined??
+
+** I think "User Defined" means it will look at the file named userDefineLang.xml
+
+ 
+
+ 
+
+TIP: There is an AsciiDoc syntax highlighter for Sublime Text also.
+
+ 
+
+ 
+
+== Add Chrome browser extension
+
+ 
+
+* Get more extensions
+
+https://chrome.google.com/webstore/category/extensions?hl=en-US
+
+* Search for asciidoc
+
+* Install *Asciidoctor.js Live Preview*
+
+ 
+
+=== Adjust settings
+
+ 
+
+* In Chrome, go to: Settings > Extensions > Asciidoctor.js Live Preview
+
+* Check to allow access to file URLs.
+
+ 
+
+image:file:///C:/Users/tbergeron/Desktop/AsciiDoctorjsLivePreview.png[]
+
+ 
+
+* Browse to your text file
+
+ 
+
+file:///C:/Users/tbergeron/Desktop/AsciiDocSetup.adoc
+
+* File must have .adoc extension. _I have not tested other extensions_
+
+ 
+
+ 
+
+TIP: Try out the various themes such as *riak* or *readthedocs* theme in the Asciidoctor.js Live Preview > Options
+
+ 
+
+ 
+
+=== Start Writing
+
+ 
+
+Quick Ref: http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+ 
+
+AsciiDoc Cheat Sheet: http://powerman.name/doc/asciidoc
+
+ 
+
+ 
+
+ 
+
+NOTE: The AsciiDoctor.js file is *almost complete* which means it may not fully render every little thing. If you run into a descrepancy, use this formatting guide: http://asciidoctor.org/docs/asciidoc-writers-guide/
+
+ 
+
+ 
+
+ 
+
+ 
+
+Official home of AsciiDoc: http://asciidoc.org/
+
+ 
+
+ 
+
+ 

@@ -1,0 +1,123 @@
+A little roll-yur-own walk through:
+
+This walkthrough works on non-system, user programs, not root-only programs: (For system programs the walk through is the same except you will want to be root and be in the /usr/src directrory)
+
+1. Make a directory under your username (optional) to build software in, from command line:
+mkdir ~/src
+
+Then change directory into it:
+
+cd ~/src
+
+2. Get your source code. You can find this at sourceforge.net or freshmeat.net, and a few other places. Often on these sites they will list dependancies, pay close attention, if you dont have one of the programs that program you want "depends" on, it will either not compile or run after it is compiled. You may have to install the programs it depends on first. Save the source in the /home/YourUsername/src (this is the same as "~/src") These will have the extensions "tar.gz" or "tar.bz2" Side note: TAR is an acronym for Tape ARchive-- they are often called "tarballs"
+
+3. From command line, make sure your still in the "~/src" and make sure your file is saved in the correct location:
+
+ls -la ./
+
+Then lets un-compress the archive:
+If it is a "tar.gz" then use this command:
+
+tar -zxvf ./NameOfFile.tar.gz
+
+If it is "tar.bz2" then:
+
+tar -xvjf ./NameOfFile.tar.bz2
+
+This will uncompress the tarball and put the data in a directory that it will create, the directory will have the same name as the original file only without the extension.
+
+Side note: the difference between them is the type of compession-- zip and bzip.
+
+4. Next read the README and INSTALL files. They may or may not exist and they may or may not contain anything usefull. First lets get into the right directory:
+
+cd ./NameOfFile/
+
+Then check to see if a README or INSTALL files exist:
+
+ls -la | less
+
+("|" is above your enter key)
+
+You can read them from the command line:
+
+vim ./README
+
+and
+
+vim ./INSTALL
+
+You can replace "vim" in the above with: nano pico elvis emacs
+These are different editors. The editor you choose is a highly personal thing (I really dont know why, I could care less, I have seen may debates on which one is better....)
+
+If you are in gnome or kde -- just browse to it, use the default editor.
+
+It is hard to explain if these contain anything usefull-- this one you will have to use your judgement. If some info seems important and doesnt make any sense you could probably post it...
+
+5. Then we need to check configure options:
+
+./configure --help | less
+
+This will give you a list of options, read these carefully, the feature you want in the software may not be enabled by default. Also if you enable an option that clearly depends on other software you will need to make sure that software exists on you system. Common example is samba support.
+
+6. Lets configure:
+
+./configure --enable=Option --enable=oiption2
+
+The "--enable=option" is obtained from step 5 above-- your software may not need any options, and thats OK. Yours may simply look like:
+
+./configure
+
+If it gives you errors, most likely it is because of missing dependancies. You will need to resolve these before continueing.
+
+7. Compile software:
+
+./make
+
+If it gives you errors at this point:
+A-- Make sure your depancies are met! and double check README, INSTALL and your compile options.
+B-- Email the maintainer of the software with your very specific hardware, your distro/version, and compile option. Include the error from command line, it will many lines above were it crashes. Ask if he would like you to do a backtrace. (If he would like a backtrace-- ask for instructions) Dont expect an answer right away, people do these things in thier spare time. Be courtious!!!-- your getting (or will get) free software! If he wants any other info, try to provide it for him.
+C-- If you are great at debuggin software-- by all means fix the problem. Then send a patch back to the maintainer.
+
+If you didnt have any troubles, gratz you've compiled some software.
+
+8. Make a package out of the software. This is very distro specific. If you want your package management software to be able to remove it. I unfortunatly cannot help much with this one, I'm sure many people here can help with this step. My distro of choice the line between package and source install is very thin (slackware). So I dont use this step.
+
+In Slackware it would be (you will need to be root):
+makepkg name-version-arch-build.tgz
+
+9. Now we need root privlages to install the software:
+
+su
+
+(It will now ask for your root password)
+
+If you skipped 8 above:
+
+./make install
+
+If you made a package out of it, use your package installer (distro specific) to install the software.
+
+In slackware:
+installpkg name-version-arch-build.tgz
+
+10. Try to run the software-- The first time run it from command line, if it crashes this will give you some hints as to what happened. You may be able to fix it, if not send the maintainer any information that can about the crash. Again be courtious (even if they are not!).
+
+11. If you need to re-compile (some software you may have to this many time lol):
+First:
+
+./make clean
+
+Second (this may or may not work-- dont be too concerned if it doesnt)
+
+./make uninstall
+
+Then follow the steps again...
+
+
+
+I hope somebody finds this useful-- pretty slow day here in montana.
+
+
+
+
+dan 
