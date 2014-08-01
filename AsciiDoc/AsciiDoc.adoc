@@ -56,7 +56,9 @@
 ** *Viewer only* works fantastic, includes themes
 * AsciiDocBox
 ** This is an HTML *editor | viewer* similar to what we are building.
-
+* angular-asciidoc-directive
+** link:http://anthonny.github.io/ascii-demo/[demo]
+** I could not get this one to work locally or on node webserver.
 
 '''
 
