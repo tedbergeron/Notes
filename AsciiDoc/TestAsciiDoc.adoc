@@ -1,6 +1,7 @@
 = Rendered with Asciidoctor.js
 The zero heading does not display by default
 
+This same doc rendered better at link:http://gist.asciidoctor.org/?github-tedbergeron%2FNotes%2F%2FAsciiDoc%2FTestAsciiDoc.adoc[DocGist]
 
 == The Dangerous and Thrilling Documentation Chronicles
 
@@ -75,7 +76,7 @@ $ ls
 index.adoc
 $
 ----
- 
+
 // Or use role attribute:
 [source,role="console shell"]
 ----
@@ -83,7 +84,7 @@ $ ls
 index.adoc
 $
 ----
- 
+
 // If we don't apply the source attribute,
 // we can still set roles:
 [.console]  // Or [role="console"]
@@ -92,7 +93,7 @@ $ ls
 index.adoc
 $
 ----
- 
+
 // If we do not use the delimiter,
 // but specify block type:
 [listing.console] // Or [listing,role="console"]
@@ -105,11 +106,11 @@ $
 [quote, Abraham Lincoln, National Cemetery Dedication]
 ____
 Four score and seven years ago our fathers brought forth
-on this continent a new nation... 
+on this continent a new nation...
 ____
 
 
-I now have the perfect environment with spellcheck. 
+I now have the perfect environment with spellcheck.
 
 === Tables
 
@@ -156,8 +157,8 @@ apparently has to be inside this block to work
 
  this indented block works too // <1>
  notice one space on the left
- 
-this doesn't work // <1> 
+
+this doesn't work // <1>
 
 <1> callout explained
 
