@@ -1,0 +1,81 @@
+=== Tech I am using this past year
+12:07 PM 9/2/2014
+
+==== ASP.NET 4.5
+* C# | MVC 5.0
+* VB.NET | Web Forms
+* jQuery
+* Bootstrap
+* Ninject
+* Razor
+* Knockout
+* TFS
+* EF (Entity Framework)
+* SQL Server 2012
+
+==== VS-2012
+* Extensions
+** Indent Guides
+** JSLint (disabled)
+** MS ASP.NET and Web Tools
+** MS VS ASP.NET MVC 5 Scaffolding (needed to do MVC 5 in VS2012)
+** NuGet Pkg Mgr
+** Productivity Power Tools 2012
+** Spell Checker
+** T4 Toolbox (.tt templates auto generated)
+** VS 2012 Color Theme Editor
+** VS Extensions for Windows Library for JavaScript...
+** Web Essentials 2012 *(MUST HAVE)*
+** WebMatrix ExtensionTemplate (for iPhone emulator in MS WebMatrix editor)
+* MS WebMatrix editor
+
+==== OS
+* Windows 7 & 8
+* Linux Slackware
+* Android
+
+
+==== Mobile Android & Apple
+* Phonegap / Cordova
+* Topcoat
+* HTML5 LocalStorage Manager
+* Handlebars
+
+
+==== Other
+* Ruby 1.9.3
+* Grunt
+* Asciidoctor (produced: HTML, slide decks, EPUB, (PDF, diagram))
+----
+Created NPM package: grunt-asciidoctor-assemble (AUG-2014)
+----
+* GitBook (.md to produce book site)
+* Node
+* GitHub (Win client)
+
+===== Personal
+* Linux Slackware (crypto)
+** GNU-GP (email)
+* SLAX (tested on USB)
+
+
+==== Used
+* Apache-ant
+* Python 2.7
+
+
+==== Tools
+* Atom Editor (Windows)
+** Asciidoc Preview and Asciidoc language
+* KeePass
+* Dvorak keyboard layout since 2006?
+* Fiddler 2 or
+
+==== Chrome Extensions
+* Hangouts
+* Postman REST client
+* GistBox (for snippets stores at GitHub)
+* Ripple Emulator (phone emulator in Chrome)
+* Clear Cache Shortcut
+* Currently (new page time/weather)
+* Redium (EPUB reader)
