@@ -23,7 +23,7 @@
 === Asciidoctor things I've tried
 
 * Asciidoctor
-** Generates .html, .ePUB, slide decks
+** Generates .html, .ePUB, slide decks, .pdf
 *** link:testasciidoc_icons_font.html[HTML generated with icons from font awesome]
 *** link:testasciidoc-a_font.html[HTML generated with icons as images]
 *** link:testasciidoc-default.html[HTML generated with no icons]
@@ -39,6 +39,8 @@
 ** `asciidoctor -r asciidoctor-epub3 -b epub3 sample-book.adoc`
 * Asciidoctor-stylesheet-factor
 ** generates Asciidoctor .css files
+* Asciidoctor-pdf
+** generates .pdf files
 
 === AsciiDoc Editor | Viewer
 
