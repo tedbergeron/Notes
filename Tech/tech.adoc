@@ -46,12 +46,13 @@
 * Ruby 1.9.3
 * Grunt
 * Asciidoctor (produced: HTML, slide decks, EPUB, (PDF, diagram))
-----
-Created NPM package: grunt-asciidoctor-assemble (AUG-2014)
-----
+
+NOTE: Created NPM package: grunt-asciidoctor-assemble (AUG-2014)
+
 * GitBook (.md to produce book site)
 * Node
 * GitHub (Win client)
+* Mongo DB
 
 ===== Personal
 * Linux Slackware (crypto)
