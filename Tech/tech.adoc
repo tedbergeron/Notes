@@ -1,5 +1,5 @@
 === Tech I am using this past year
-12:07 PM 9/2/2014
+12:09 PM 10/31/2014
 
 ==== ASP.NET 4.5
 * C# | MVC 5.0
@@ -80,6 +80,11 @@ NOTE: Created NPM package: grunt-asciidoctor-assemble (AUG-2014)
 * Clear Cache Shortcut
 * Currently (new page time/weather)
 * Redium (EPUB reader)
+
+==== Conferences 2014
+* Write the Docs - Portland
+* LOC 89th Annual Conference - Eugene
+* PhoneGap - San Francisco
 
 ==== Title
 * Documentarian
