@@ -1,0 +1,28 @@
+	A Message from PhoneGap:
+
+Come prepared for your workshops tomorrow by installing some tools in advance.
+
+Some Recommendations for the PhoneGap Essentials Workshop:
+•	Node.js
+•	The latest PhoneGap CLI https://www.npmjs.org/package/phonegap
+•	The latest Cordova CLI https://www.npmjs.org/package/cordova
+•	PhoneGap Developer App installed on your device http://app.phonegap.com/
+•	The Ionic CLI https://www.npmjs.org/package/ionic
+
+It's also recommended to have an account on PhoneGap Build. https://build.phonegap.com/
+
+If you would like to be able to run all features on a specific device then you will need to have the SDK installed for your platform. Here are some guides and links:
+•	Android SDK http://developer.android.com/sdk/index.html
+•	iOS (on a Mac) http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide
+•	Other platform guides can be found here http://docs.phonegap.com/en/edge/guide_platforms_index.md.html
+We look forward to seeing you tomorrow!
+
+Cheers,
+The PhoneGap Team
+PhoneGap Day US 2014
+
+Hosted by PhoneGap
+
+Thursday, October 23, 2014 at 9:00 AM - Friday, October 24, 2014 at 8:00 PM (PDT)
+
+Dogpatch Studios, 991 Tennessee St, San Francisco, CA 94107  |  Directions
