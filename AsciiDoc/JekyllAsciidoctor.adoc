@@ -1,0 +1,3 @@
+=== Advanced integration of Jekyll and AsciiDoctor
+
+* http://eshepelyuk.github.io/2014/11/06/advanced-jekyll-and-asciidoctor.html

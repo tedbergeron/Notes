@@ -14,3 +14,8 @@
 == Docs
 
 * Installing Ionic and its Dependencies http://ionicframework.com/docs/guide/installation.html
+
+
+== Theme Editor
+
+* Ionic Tailor http://ionic-theme-editor.herokuapp.com/
