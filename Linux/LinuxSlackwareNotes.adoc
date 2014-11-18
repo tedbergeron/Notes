@@ -14,3 +14,7 @@
 ** needed to install the AsciiDoc Preview
 * Tor Browser
 * Thunderbird
+
+=== Your Own Password Manager
+
+http://www.garron.me/en/linux/bash-password-manager.html
