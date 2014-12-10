@@ -10,6 +10,8 @@
 * Ionic Tutorial #1 http://ccoenraets.github.io/ionic-tutorial/
 * Ionic Tutorial and Sample Application #2 http://coenraets.org/blog/2014/10/ionic-tutorial-and-sample-application/
 * Become an Expert with Ionic! http://learn.ionicframework.com/
+* Ionic User Authentication with NodeJS https://github.com/sean-hill/ionic-user-auth-express
+
 
 == Docs
 
