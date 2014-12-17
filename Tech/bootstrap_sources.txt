@@ -1,0 +1,35 @@
+= Bootstrap Sources
+
+* liked this idea
+** http://go.thesearchagency.com/MobileExperienceScorecardPrintNewsandMedia.com
+
+=== Blog
+* http://startbootstrap.com/template-overviews/clean-blog/
+
+==== Jekyll Themes
+* https://mademistakes.com/work/jekyll-themes/
+* http://jekyllthemes.org/themes/hpstr/
+
+
+
+* nice business portfolio:
+** http://bootstrapzero.com/bootstrap-template/amoeba
+** http://www.bootstrapzero.com/bootstrap-template/shield
+
+
+* Portfolio or Resume
+** http://www.bootstrapzero.com/bootstrap-template/responsive-developer
+* variety of portfolio templates
+** http://startbootstrap.com/template-categories/all/
+
+* basic but nice
+** http://www.gettemplate.com/demo/progressus/index.html
+
+
+
+* Bootstrap Resources
+** http://startbootstrap.com/bootstrap-resources/
+
+
+
+
