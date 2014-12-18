@@ -13,6 +13,11 @@
 * Ionic User Authentication with NodeJS https://github.com/sean-hill/ionic-user-auth-express
 
 
+== Ionic Swipeable Cards
+* http://ionicframework.com/blog/ionic-swipeable-cards/
+** DEMO: http://ionicframework.com/demos/swipe-cards/
+
+
 == Docs
 
 * Installing Ionic and its Dependencies http://ionicframework.com/docs/guide/installation.html
@@ -21,3 +26,6 @@
 == Theme Editor
 
 * Ionic Tailor http://ionic-theme-editor.herokuapp.com/
+
+== Ionic One Year Review
+http://ionicframework.com/blog/ionic-one-year-review/
