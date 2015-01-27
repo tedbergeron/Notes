@@ -41,6 +41,8 @@
 ** generates Asciidoctor .css files
 * Asciidoctor-pdf
 ** generates .pdf files
+** alpha: http://asciidoctor.org/docs/convert-asciidoc-to-pdf/
+
 
 === AsciiDoc Editor | Viewer
 

@@ -1,4 +1,17 @@
-=== Tech I am using this past year
+=== Tech I am using 2015
+* Bundler
+* Jekyll for blogging
+** Jekyll-AsciiDoc
+* Asciidoctor-PDF (Ruby)
+
+==== Conferences 2015
+
+
+
+----
+
+
+=== Tech I used 2014
 12:09 PM 10/31/2014
 
 ==== ASP.NET 4.5
@@ -31,7 +44,7 @@
 
 ==== OS
 * Windows 7 & 8
-* Linux Slackware
+* Linux Slackware 14.1
 * Android
 
 
