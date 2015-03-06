@@ -1,7 +1,6 @@
 = Rendered with Asciidoctor.js
 The zero heading does not display by default
 
-This same doc rendered better at link:http://gist.asciidoctor.org/?github-tedbergeron%2FNotes%2F%2FAsciiDoc%2FTestAsciiDoc.adoc[DocGist]
 
 == The Dangerous and Thrilling Documentation Chronicles
 
@@ -41,9 +40,12 @@ IMPORTANT: this is a *important* admonition paragraph.
 
 CAUTION: this is a *caution* admonition paragraph.
 
-=== Font Awesome tags
-http://fortawesome.github.io/Font-Awesome/icons/
-Uses the 16 predefined colors in HTML. Many icons don't work.
+=== Inline Icons
+
+* Uses Font Awesome tags http://fortawesome.github.io/Font-Awesome/icons/
+* *Most icons do not work because they are not defined in Asciidoctor*
+* Uses classes named the same as most of the "16 HTML colors" (you could add more in the Asciidoctor style sheet)
+
 
 icon:question[role=blue] This is the question
 
@@ -57,7 +59,7 @@ icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux
 
 icon:bolt[], icon:plane[], icon:plus[], icon:pencil[]
 icon:refresh[], icon:rss[], icon:trash[], icon:ticket[]
-icon:globe[], icon:home[], icon:wrench[]
+icon:globe[], icon:home[], icon:wrench[], icon:heartbeat[]
 
 
 ********
@@ -69,38 +71,7 @@ icon:star[2x, role=yellow] the star icon.
 icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
 
 
-=== CSS Classes
-[source.console.shell]
-----
-$ ls
-index.adoc
-$
-----
-
-// Or use role attribute:
-[source,role="console shell"]
-----
-$ ls
-index.adoc
-$
-----
-
-// If we don't apply the source attribute,
-// we can still set roles:
-[.console]  // Or [role="console"]
-----
-$ ls
-index.adoc
-$
-----
-
-// If we do not use the delimiter,
-// but specify block type:
-[listing.console] // Or [listing,role="console"]
-$ ls
-index.adoc
-$
-
+=== Quotes
 
 
 [quote, Abraham Lincoln, National Cemetery Dedication]
@@ -109,8 +80,6 @@ Four score and seven years ago our fathers brought forth
 on this continent a new nation...
 ____
 
-
-I now have the perfect environment with spellcheck.
 
 === Tables
 
@@ -134,18 +103,20 @@ a,b,c,d
 A,B,C,D
 |======
 
+
+=== Interactive Checkboxes
+
 [options=interactive]
 - [*] checked
 - [x] also checked
 - [ ] not checked
 
 
-
-
-== Markdown style bullets
+## Markdown style bullets
 - one
 - two
 - three
+
 
 == Callout Markers
 
@@ -154,13 +125,14 @@ This is a callout. Must be at end of line // <1>
 apparently has to be inside this block to work
 ----
 
-
- this indented block works too // <1>
+ this indented block works too // <2>
  notice one space on the left
 
-this doesn't work // <1>
+this doesn't work because it's not inside a block // <3>
 
-<1> callout explained
+<1> callout one explained
+<2> callout two details
+<3> did not work
 
 == Footnotes
 
