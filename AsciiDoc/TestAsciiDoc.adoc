@@ -17,16 +17,20 @@ Enter twice, then just keep on typing.
 
 === Level 2 Section
 
-.TODO list
-- Learn the AsciiDoc syntax
-- Install Asciidoctor
-- Write my document
+.Unordered list
+* Learn the AsciiDoc syntax
+** Install Asciidoctor
+* Write my document
 
-Now unordered lists
+Now ordered lists
 
-* Edgar Allen Poe
-** Sheri S. Tepper
-** Bill Bryson
+. Edgar Allen Poe
+.. Sheri S. Tepper
+. Bill Bryson
+
+.TODO List
+* [ ] Check mail
+* [x] Feed dog
 
 === Admonition Blocks
 
@@ -66,7 +70,7 @@ icon:globe[], icon:home[], icon:wrench[], icon:heartbeat[]
 icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
 ********
 
-icon:star[2x, role=yellow] the star icon.
+icon:star[2x, role=yellow] the star icon at 2x size.
 
 icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
 
@@ -112,13 +116,13 @@ A,B,C,D
 - [ ] not checked
 
 
-## Markdown style bullets
+### Markdown is rendered by Asciidoctor too
 - one
 - two
 - three
 
 
-== Callout Markers
+=== Callout Markers
 
 ----
 This is a callout. Must be at end of line // <1>
@@ -134,12 +138,12 @@ this doesn't work because it's not inside a block // <3>
 <2> callout two details
 <3> did not work
 
-== Footnotes
+=== Footnotes
 
 A footnote footnote:[An example footnote.];
 a second footnote with a reference ID footnoteref:[note2,Second footnote.];
 finally a reference to the second footnote footnoteref:[note2].
 
-
-.Use built-in attribute asciidoctor-version
-Document generated with Asciidoctor {asciidoctor-version}.
+=== Built in attributes
+.Use built-in attribute: 'asciidoctor-version'
+Document generated with Asciidoctor ver. {asciidoctor-version}.
