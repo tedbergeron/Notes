@@ -1,0 +1,11 @@
+= Theme Ideas
+
+== Hexagons
+
+* Demo: hexagons.html
+* source: http://creative-punch.net/2014/01/perfect-css-hexagons-size-using-transform-calc
+
+== Themes
+
+* Time Template: http://themes.kubasto.com/template/time/
+* Origin Theme: http://inspectelement.com/theme/origin/
