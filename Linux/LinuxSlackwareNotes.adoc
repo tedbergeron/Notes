@@ -18,3 +18,7 @@
 === Your Own Password Manager
 
 http://www.garron.me/en/linux/bash-password-manager.html
+
+=== How to enable MSE and native HTML5 support in Firefox on Linux
+
+http://www.linuxveda.com/2015/04/02/enable-mse-native-html5-support-firefox-linux/
