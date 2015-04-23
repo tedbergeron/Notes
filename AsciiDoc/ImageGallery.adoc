@@ -1,0 +1,7 @@
+= Test Gallery
+
+this is a test
+
+== Thumbnail links to full size
+
+image:bucket_and_pail.png[,width=250,link="bucket_and_pail.png"] 

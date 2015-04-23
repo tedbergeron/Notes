@@ -10,6 +10,11 @@
 * icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
 * icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
 * icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
+* icon:star[role=yellow] http://fortawesome.github.io/Font-Awesome/icons/[Font-Awesome icons]
+
+.Create _index.txt from command prompt
+[source, WIN command prompt]
+dir /B /ON > _index.txt
 
 
 == AsciiDoc Notes
@@ -30,7 +35,6 @@
 
 * Asciidoctor-decks
 ** Create slide shows with deck.js or reveal.js
-** NOTE: deck.js is more developed than reveal at this time.
 * Asciidoctor-diagram
 ** creates images from text diagrams
 ** I have not figured this one out.

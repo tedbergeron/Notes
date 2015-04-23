@@ -1,4 +1,8 @@
 = Rendered with Asciidoctor.js
+:icons: font
+:experimental:
+// Define unicode for Apple Command key.
+:commandkey: &#8984;
 The zero heading does not display by default
 
 
@@ -47,9 +51,8 @@ CAUTION: this is a *caution* admonition paragraph.
 === Inline Icons
 
 * Uses Font Awesome tags http://fortawesome.github.io/Font-Awesome/icons/
-* *Most icons do not work because they are not defined in Asciidoctor*
+** New icons in Font-Awesome 4.3 do not display in Asciidoctor 1.5.2 yet
 * Uses classes named the same as most of the "16 HTML colors" (you could add more in the Asciidoctor style sheet)
-
 
 icon:question[role=blue] This is the question
 
@@ -61,27 +64,35 @@ icon:check[role=green] this is a checkmark
 
 icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux[], icon:css3[], icon:github-alt[]
 
-icon:bolt[], icon:plane[], icon:plus[], icon:pencil[]
-icon:refresh[], icon:rss[], icon:trash[], icon:ticket[]
-icon:globe[], icon:home[], icon:wrench[], icon:heartbeat[]
+icon:bolt[], icon:plane[], icon:plus[], icon:pencil[],
+icon:refresh[], icon:rss[], icon:trash[], icon:ticket[],
+icon:globe[], icon:home[], icon:wrench[], icon:bus[], icon:eur[], icon:cab[], icon:calculator[]
 
+These new icons in font-awesome 4.3 do not display in Asciidoctor 1.5.2:
+
+icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
+
+
+==== Make icons upto five times bigger
 
 ********
 icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
 ********
 
-icon:star[2x, role=yellow] the star icon at 2x size.
+icon:star[3x, role=yellow] the star icon at 3x size.
 
+
+==== Link an icon
 icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
 
 
-=== Quotes
+=== Quotes (with optional icons)
 
 
 [quote, Abraham Lincoln, National Cemetery Dedication]
 ____
-Four score and seven years ago our fathers brought forth
-on this continent a new nation...
+icon:quote-left[1x] Four score and seven years ago our fathers brought forth
+on this continent a new nation...icon:quote-right[1x]
 ____
 
 
@@ -137,6 +148,29 @@ this doesn't work because it's not inside a block // <3>
 <1> callout one explained
 <2> callout two details
 <3> did not work
+
+
+=== Keyboard macro
+With the keyboard macro *kbd:[]* we can include nicely formatted keyboard shortcuts.
+
+.Requires these attribute options
+----
+// We must enable experimental attribute.
+:experimental:
+// Define unicode for Apple Command key.
+:commandkey: &#8984;
+----
+
+.Display the keys
+
+Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] to access the _Project_ view.
+
+To zoom out press kbd:[Ctrl + -].
+
+Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
+
+
+
 
 === Footnotes
 
