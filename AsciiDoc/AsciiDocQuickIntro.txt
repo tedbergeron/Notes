@@ -1,0 +1,44 @@
+AsciiDoc is like a superset of Markdown. 
+
+=== Chrome Extention 
+
+Get the extension for Chrome *Asciidoctor Live Preview*: https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia?hl=en-US
+
+* Set Options
+** Safe mode: unsafe (so you can use experimental things such as showing the keyboard keys in your docs)
+** Preview .txt files [x] (check so you can use .txt as well as .adoc files)
+
+Save the test file and open in Chrome.
+
+=== Syntax for writing AsciiDoc
+
+Here's how you 'markdown' the text
+
+* AsciiDoc cheatsheet: http://powerman.name/doc/asciidoc
+* Asciidoctor quick ref: http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+* Asciidoctor User Manual: syntax http://asciidoctor.org/docs/user-manual/#doc-header
+* add some Font-Awesome icons: http://fortawesome.github.io/Font-Awesome/icons/
+
+
+=== Local AsciiDoc Website
+Create a local website on your laptop with text files and Chrome: Asciidoctor Live Preview extension. This post has some template text files to download to get you started with the wiki-like website. http://tedbergeron.github.io/2015/04/09/AsciiDoc-Website.html
+
+
+=== What can you do with Asciidoctor? 
+
+.Generate:
+* HTML
+* PDF
+* Reveal.js slide deck
+* ePUB  
+
+.And more
+I'm using AsciiDoc files and Jekyll to create this blog: http://tedbergeron.github.io. I create a post in a text file as AsciiDoc (or Markdown ) and have Jekyll generate the blog.
+
+There are other conversions I haven't tried like AsciiDoc to DocBook5 (or 4.5) 
+
+=== Why AsciiDoc? 
+
+http://asciidoctor.org/docs/what-is-asciidoc/
+
+
