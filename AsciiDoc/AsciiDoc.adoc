@@ -68,6 +68,18 @@ dir /B /ON > _index.txt
 ** link:http://anthonny.github.io/ascii-demo/[demo]
 ** I could not get this one to work locally or on node webserver.
 
+=== Reveal.js print to PDF
+
+* Requires Chrome
+* Add print-pdf in the query string
+** link:AsciiDoc/deck.html?print-pdf[]
+* Change the Destination setting to Save as PDF.
+* Change the Layout to Landscape.
+* Change the Margins to None.
+* Click Save.
+
+
+
 '''
 
 Document generated with Asciidoctor {asciidoctor-version}.
