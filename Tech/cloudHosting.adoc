@@ -4,3 +4,11 @@
 * https://c9.io/ Cloud 9
 * http://azure.microsoft.com/
 * https://cloud.atlantic.net/?page=signup_ws ($ .99/month)
+
+== Database Solutions
+
+* Firebase seems like a good one
+** Could host website elsewhere and call to MongoDB here
+** Ionic/Angular handles calls to Firebase
+* File System Database (JSON/XML) https://filesystemdatabase.codeplex.com/
+** A simple database like wrapper that uses text based files (such as JSON or XML) on disk. Ideal for simple, low use websites or desktop applications.

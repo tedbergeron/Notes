@@ -4,12 +4,13 @@
 ** Jekyll-AsciiDoc
 * Asciidoctor-PDF (Ruby)
 
+==== Tools
+* Visual Studio Community 2013 (aka VS ver 12.0)
+* SQL Server Express 2014 with Advanced Services
+** Poor Man’s T-SQL Formatter for SSMS 2014
+
 ==== Conferences 2015
-
-
-
-----
-
+* Write the Docs - Portland
 
 === Tech I used 2014
 12:09 PM 10/31/2014
