@@ -11,6 +11,7 @@
 * icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
 * icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
 * icon:star[role=yellow] http://fortawesome.github.io/Font-Awesome/icons/[Font-Awesome icons]
+* icon:star[role=yellow] http://gist.asciidoctor.org/?github-powerman%2Fasciidoc-cheatsheet%2F%2FREADME.adoc
 
 .Create _index.txt from command prompt
 [source, WIN command prompt]
@@ -78,6 +79,11 @@ dir /B /ON > _index.txt
 * Change the Margins to None.
 * Click Save.
 
+=== Font Awesome
+
+NOTE: you can control the URL used for Font Awesome by setting the following attribute in the document header (or by passing the attribute to the cli or API).
+
+ :iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css
 
 
 '''
