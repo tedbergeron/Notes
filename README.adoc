@@ -3,4 +3,14 @@
 This repo contains notes
 
 * link:AsciiDoc/AsciiDoc.adoc[AsciiDoc]
+
+=== Using Git
+
 * link:http://rogerdudler.github.io/git-guide/[git-guide]
+* https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf[GitHub git-cheat-sheet] PDF
+
+=== WebDev Cheat Sheets
+
+Mostly PDF's
+
+* http://blog.sellfy.com/cheat-sheets-for-web-designers/
