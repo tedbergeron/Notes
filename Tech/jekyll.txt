@@ -1,0 +1,20 @@
+== Jekyll
+
+To start
+
+ $ jekyll new c:\path\to\dir
+
+=== Windows
+
+You'll need Python to get the code highlighter to work. Skip it for now
+
+In the _config.yml file add
+
+ highlighter: false
+
+=== Make changes and test
+
+ $ jekyll serve
+
+Find your site at http://localhost:4000
+
