@@ -1,0 +1,50 @@
+/* 
+* Render HTML as unrendered Asciidoc
+*   - See http://jsbin.com/mifepiqosa/1/edit?html,css,output
+*
+* bodiam / asciidoc.css https://gist.github.com/bodiam/01d8d0502c1cf3d9204f
+*
+*/
+
+* {
+    font-size: 12pt;
+    font-family: monospace;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+h1::before { content: "= "; }
+h2::before { content: "== "; }
+h3::before { content: "=== "; }
+h4::before { content: "==== "; }
+h5::before { content: "===== "; }
+h6::before { content: "====== "; }
+strike::before { content: "[line-through]#"; }
+strike::after { content: "#"; }
+i::before, i::after { content: "_"; }
+b::before, b::after { content: "*"; }
+ol, ul { list-style: none; padding-left: 0; }
+ol li::before { content: "* "; }
+ul li::before { content: "1. "; }
+code::before, code::after { content: "`"; }
+pre::before { content: "----\A"; }
+pre[lang]::before { content: "[source," attr(lang) "]\A----\A"; }
+pre::after { content:"----\A"; }
+a::before { content: attr(href) "["; }
+a::after { content: "]"; }
+tr::before { content: "| "; }
+td::after { content: " | "; }
+thead::before { content: "|===\A "; white-space: pre; }
+thead td::after { content: " | \A\A "; white-space: pre; }
+tbody::after { content: "|===\A "; white-space: pre; }
+
+ol, ul { list-style: none; padding-left: 0; }
+ul li::before { content: "* "; }
+ol { counter-reset: section; }
+ol li::before {
+  counter-increment: section;
+  content: counters(section,".") ". ";
+}
