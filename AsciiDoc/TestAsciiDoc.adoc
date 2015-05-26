@@ -3,7 +3,11 @@
 :experimental:
 // Define unicode for Apple Command key.
 :commandkey: &#8984;
+:toc: preamble
+:toc-placement!:
 The zero heading does not display by default
+
+toc::[]
 
 
 == The Dangerous and Thrilling Documentation Chronicles
@@ -96,6 +100,12 @@ on this continent a new nation...icon:quote-right[1x]
 ____
 
 
+=== Emoji
+
+Emoji extension large heart emoji
+emoji:heart[lg] and more
+emoji:heart-eyes[], emoji:put-litter-in-its-place[], emoji:us[], emoji:violin[]
+
 === Tables
 
 .An example table
@@ -161,7 +171,8 @@ With the keyboard macro *kbd:[]* we can include nicely formatted keyboard shortc
 :commandkey: &#8984;
 ----
 
-.Display the keys
+
+.Keyboard macro syntax
 
 Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] to access the _Project_ view.
 
@@ -170,7 +181,27 @@ To zoom out press kbd:[Ctrl + -].
 Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 
 
+.Button macro syntax
 
+Press the btn:[OK] button when you are finished.
+
+Select a file in the file navigator and click btn:[Open].
+
+.Menu macro syntax
+
+To save the file, select menu:File[Save].
+
+Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
+
+
+=== Charts
+
+[chart,line]
+....
+January,February,March
+28,48,40
+65,59,80
+....
 
 === Footnotes
 
