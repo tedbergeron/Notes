@@ -88,4 +88,4 @@ NOTE: you can control the URL used for Font Awesome by setting the following att
 
 '''
 
-Document generated with Asciidoctor {asciidoctor-version}.
+Document generated with link:http://asciidoctor.org/[image:https://img.shields.io/badge/Asciidoctor-v{asciidoctor-version}-orange.svg[]]
