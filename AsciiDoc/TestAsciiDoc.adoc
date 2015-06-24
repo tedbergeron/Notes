@@ -12,7 +12,7 @@ toc::[]
 
 == The Dangerous and Thrilling Documentation Chronicles
 
-This journey begins on a bleary Monday morning.
+This journey begins on a #bleary Monday# morning.
 
 In AsciiDoc, the main structural element is the paragraph.
 A paragraph consists of adjacent lines of text.
