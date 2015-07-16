@@ -1,0 +1,67 @@
+= My New Title
+:source-highlighter: coderay
+:revealjs_theme: beige
+:revealjs_progress: true
+:revealjs_slideNumber: true
+
+== Slide One
+
+To generate this slide deck
+
+ asciidoctor -T templates/slim nameOfSlides.adoc
+
+Hello World - Good Bye Cruel World
+
+[NOTE.speaker]
+--
+Actually things aren't that bad
+--
+
+== EXTRA Slide
+
+This is a new slide
+
+
+[data-background="olive"]
+== Slide Two
+
+This is slide two very olive.
+
+More slides below. Go Down!
+
+=== Slide Two Down
+
+This is down FIRST
+
+=== Slide Two Down Down
+
+This is down SECOND
+
+== Asciidoctor renders
+
+* HTML
+* PDF
+* slide decks (deck.js & reveal.js)
+* ePUB
+* and more
+
+
+== Slide Four
+
+[%step]
+* this
+* is
+* revealed
+* gradually
+
+== Slide Five
+
+[source,ruby]
+----
+puts "Hello, World!"
+----
+
+== Another Slide
+
+That's all
+Folks

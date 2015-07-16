@@ -1,0 +1,51 @@
+= Zen of Writing
+:uri-project: http://example.org
+
+
+== D.R.Y. Attributes
+
+Place these at the top for easy editing.
+
+ :uri-project: http://example.org
+
+Find out more about {uri-project}[Project Name]
+
+
+
+== One line per sentence
+
+* Group lines into paragraphs
+* Enables you to comment out a line
+** // is a comment
+
+Shop, pumpkin spice, extra café au lait spoon instant, mazagran cup rich so crema.
+// Kopi-luwak, pumpkin spice crema, trifecta caramelization and as chicory organic.
+Filter bar aroma grounds, cream ut, viennese to go dark barista macchiato.
+Iced so milk white steamed single origin turkish beans.
+
+== Comment out a section
+
+* //// is a block comment ////
+
+Macchiato robusta et coffee, white, rich galão irish caffeine fair trade.
+////
+Acerbic at, foam black java foam, aromatic filter pumpkin spice to go body.
+Cup caffeine turkish, aroma, caramelization siphon dark grounds flavour cappuccino.
+////
+Spoon sit beans eu half and half pumpkin spice con panna roast.
+
+== Use Includes
+
+.Shared Content
+ include::{uri-project}/how_to_complete_this_guide.adoc[]
+
+.Testable source code
+
+ [source, groovy]
+ ----
+ include::build.gradle[tag=repositories]
+ ----
+
+== Just answer questions
+
+Write a number of questions to answer to build your doc.

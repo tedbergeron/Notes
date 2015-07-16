@@ -1,0 +1,63 @@
+link:../Readme.txt[docs icon:home[]]
+
+= Using AsciiDoc
+
+==== How-To
+* icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+* icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
+* icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
+* icon:star[role=yellow] http://fortawesome.github.io/Font-Awesome/icons/[Font-Awesome icons]
+* icon:star[role=yellow] https://leanpub.com/awesomeasciidoctornotebook/read[Awesome Asciidoctor Notebook]
+
+* link:ZenWriting.txt[]
+
+==== Examples
+* link:TestAsciiDoc.adoc[Test Page]
+* link:AsciiDocBrownBag/deck.html[Reveal slide deck]
+* link:ImageGallery.txt[Image Gallery]
+* link:markdown.txt[Markdown works too]
+
+
+
+=== Asciidoctor Rendering HTML
+
+ > asciidoctor testasciidoc.adoc
+
+* link:testasciidoc_icons_font.html[] with icons font
+* link:testasciidoc-a_font.html[] with image icons
+* link:testasciidoc-default.html[] no icons
+
+=== Asciidoctor Rendering slide deck
+
+ > asciidoctor -T templates/slim deck.txt
+
+=== Asciidoctor Rendering to PDF
+
+ > asciidoctor-pdf deck.txt
+
+* e.g. link:AsciiDocBrownBag/deck.pdf[Asciidoctor PDF] rendering the deck.txt file
+
+=== Reveal.js print to PDF
+
+* Requires Chrome
+* Add print-pdf in the query string
+** link:AsciiDocBrownBag/deck.html?print-pdf[]
+* Change the Destination setting to Save as PDF.
+* Change the Layout to Landscape.
+* Change the Margins to None.
+* Click Save.
+* link:AsciiDocBrownBag/RevealPrintToPDF.pdf[]
+
+=== Command Line to create file with filenames
+
+.Create _index.txt from command prompt
+ dir /B /ON > _index.txt
+
+
+==== Tool Setups
+* link:EditorSetupForAsciiDoc.adoc[Editor Setup for AsciiDoc]
+* link:Ruby.adoc[Ruby Setup]
+* link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
+
+
+include::footer.txt[]
