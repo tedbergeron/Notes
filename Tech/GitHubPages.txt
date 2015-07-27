@@ -1,0 +1,21 @@
+= GitHub Pages
+
+I ran into an issue trying to host my reveal.js slide deck on gh-pages
+
+https://help.github.com/articles/page-build-failed-missing-submodule/
+
+
+If you haven't initialized your submodule, you will need to initialize it with the following steps:
+
+In the submodule's directory, run 
+
+ git submodule init
+
+then 
+
+ git submodule update.
+
+Commit and push your changes to trigger another build on the server.
+
+
+TIP: We strongly recommend running Jekyll locally so you can easily debug and fix build errors before pushing to GitHub.
