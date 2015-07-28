@@ -1,0 +1,27 @@
+= Federated Wiki
+
+== Running Federated Wiki
+
+You can run it on your laptop on localhost
+
+=== Start Default
+
+ $ wiki
+
+This will fire up node and you'll find it at http://localhost:3000
+
+This will store the JSON data here by default on Windows:
+
+C:\Users\tbergeron\.wiki
+
+
+=== Start: Specify Data Store
+
+ $ wiki --data C:\_dev\fedwiki
+
+This will store the JSON data here: C:\_dev\fedwiki
+
+
+.more info: 
+
+https://www.npmjs.com/package/wiki
