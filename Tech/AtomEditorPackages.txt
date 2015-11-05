@@ -1,0 +1,30 @@
+=== Atom Editor Packages
+* asciidoc-preview
+* language-asciidoc
+* imdone-atom
+* project-manager
+* line-ending-converter
+* atom-beautify
+
+==== Theme
+* UI: Atom Dark
+* Syntax: One Dark
+
+==== projects.cson
+[Source, CSON]
+----
+_docs:
+	title: "Docs and Dev"
+	paths: [
+		"C:\\Users\\tbergeron\\Documents\\_docs"
+		"C:\\_dev"
+    ]
+----
+
+==== keymap.cson
+[Source, CSON]
+----
+'atom-workspace, atom-workspace atom-text-editor':
+  'ctrl-shift-a': 'asciidoc-preview:toggle'
+  'ctrl-alt-a': 'asciidoc-preview:toggle-render-on-save-only'
+----
