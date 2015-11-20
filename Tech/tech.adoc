@@ -1,4 +1,5 @@
 === Tech I am using 2015
+* link:http://gohugo.io/[Hugo]
 * Bundler
 * Asciidoctor
 ** Asciidoctor-PDF (Ruby)
@@ -8,6 +9,7 @@
 * Jekyll for blogging
 ** link:http://tedbergeron.github.io/[My Tech Blog] powered by Jekyll & Asciidoctor
 * link:http://tedbergeron.github.io/hubpress.io/[HubPress] powered by Asciidoctor
+* Ruby 2.1.7 
 
 
 ==== Tools
