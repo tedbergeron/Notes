@@ -1,4 +1,4 @@
-link:../Readme.txt[docs icon:home[]]
+link:../README.txt[docs icon:home[]]
 
 = Using AsciiDoc
 
@@ -9,10 +9,11 @@ link:../Readme.txt[docs icon:home[]]
 * icon:star[role=yellow] http://fortawesome.github.io/Font-Awesome/icons/[Font-Awesome icons]
 * icon:star[role=yellow] https://leanpub.com/awesomeasciidoctornotebook/read[Awesome Asciidoctor Notebook]
 
-* link:ZenWriting.txt[]
+* link:ZenWriting.txt[Zen of Writing]
 
 ==== Examples
 * link:TestAsciiDoc.adoc[Test Page]
+* link:TestWithoutIcons.txt[Test document without icons font]
 * link:AsciiDocBrownBag/deck.html[Reveal slide deck]
 * link:ImageGallery.txt[Image Gallery]
 * link:markdown.txt[Markdown works too]
@@ -22,6 +23,12 @@ link:../Readme.txt[docs icon:home[]]
 === Asciidoctor Rendering HTML
 
  > asciidoctor testasciidoc.adoc
+
+You can also point to a stylesheet
+
+ > asciidoctor -a linkcss testasciidoc.adoc
+
+Samples of HTML output
 
 * link:testasciidoc_icons_font.html[] with icons font
 * link:testasciidoc-a_font.html[] with image icons
@@ -47,6 +54,19 @@ link:../Readme.txt[docs icon:home[]]
 * Change the Margins to None.
 * Click Save.
 * link:AsciiDocBrownBag/RevealPrintToPDF.pdf[]
+
+=== Asciidoctor Rendering to EPUB
+
+ $ asciidoctor-epub3 sample-book.adoc
+
+This will produce sample-book.epub
+
+We also recommend specifying an output directory using the -D option flag.
+
+ $ asciidoctor-epub3 -D output data/samples/sample-book.adoc
+
+When the script completes, you'll see the file sample-book.epub appear in the _output_ directory. Open that file with an EPUB3 reader to view the result.
+
 
 === Command Line to create file with filenames
 

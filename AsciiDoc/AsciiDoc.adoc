@@ -1,26 +1,14 @@
 = AsciiDoc
 
-* link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
-* link:Ruby.adoc[Ruby Setup]
-* link:TestAsciiDoc.adoc[Test Page]
-
-
-'''
-
 * icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
 * icon:star[role=yellow] http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Asciidoctor quick ref]
 * icon:star[role=yellow] http://asciidoctor.org/docs/user-manual/#doc-header[Asciidoctor User Manual: syntax]
 * icon:star[role=yellow] http://fortawesome.github.io/Font-Awesome/icons/[Font-Awesome icons]
 * icon:star[role=yellow] http://gist.asciidoctor.org/?github-powerman%2Fasciidoc-cheatsheet%2F%2FREADME.adoc
 
-.Create _index.txt from command prompt
-[source, WIN command prompt]
-dir /B /ON > _index.txt
-
-
 == AsciiDoc Notes
 
-=== AsciiDoc
+=== AsciiDoc (original Python)
 
 * AsciiDoc 8.6.9
 ** requires Python.
@@ -28,11 +16,7 @@ dir /B /ON > _index.txt
 
 === Asciidoctor things I've tried
 
-* Asciidoctor
-** Generates .html, .ePUB, slide decks, .pdf
-*** link:testasciidoc_icons_font.html[HTML generated with icons from font awesome]
-*** link:testasciidoc-a_font.html[HTML generated with icons as images]
-*** link:testasciidoc-default.html[HTML generated with no icons]
+Asciidoctor: generates .html, .ePUB, slide decks, .pdf
 
 * Asciidoctor-decks
 ** Create slide shows with deck.js or reveal.js
@@ -41,12 +25,10 @@ dir /B /ON > _index.txt
 ** I have not figured this one out.
 * Asciidoctor-epub3
 ** Creates an epub file
-** `asciidoctor -r asciidoctor-epub3 -b epub3 sample-book.adoc`
 * Asciidoctor-stylesheet-factor
 ** generates Asciidoctor .css files
 * Asciidoctor-pdf
 ** generates .pdf files
-** alpha: http://asciidoctor.org/docs/convert-asciidoc-to-pdf/
 
 
 === AsciiDoc Editor | Viewer
@@ -69,15 +51,6 @@ dir /B /ON > _index.txt
 ** link:http://anthonny.github.io/ascii-demo/[demo]
 ** I could not get this one to work locally or on node webserver.
 
-=== Reveal.js print to PDF
-
-* Requires Chrome
-* Add print-pdf in the query string
-** link:AsciiDoc/deck.html?print-pdf[]
-* Change the Destination setting to Save as PDF.
-* Change the Layout to Landscape.
-* Change the Margins to None.
-* Click Save.
 
 === Font Awesome
 

@@ -1,0 +1,13 @@
+= Test document without icons font
+:icons: 
+:status: images/icons/note.png
+
+.Response
+[icon="{status}"]
+[NOTE]
+====
+Icons Font option takes control over the admonition icons and converts it to the fixed element:
+ <i class="fa icon-note"...
+
+As far as I can see to get your own icon into the admonition you have to set the icons attribute to anything but font and set all icons yourself
+====
