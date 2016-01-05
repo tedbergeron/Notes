@@ -158,6 +158,17 @@ a| Cell with a list
 |===
 
 
+.Set the background color of a table cell
+[cols="2"]
+|===
+|plain
+|plain
+|RED
+{set:cellbgcolor:red}
+|plain
+{set:cellbgcolor!}
+|===
+
 === Interactive Checkboxes
 
 [options=interactive]
