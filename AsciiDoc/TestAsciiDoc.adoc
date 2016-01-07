@@ -243,6 +243,25 @@ January,February,March
 65,59,80
 ....
 
+=== Default Colors
+
+icon:folder[role=aqua] Aqua
+icon:folder[role=black] Black
+icon:folder[role=blue] Blue
+icon:folder[role=fuchsia] Fuchsia
+icon:folder[role=gray] Gray
+icon:folder[role=green] Green
+icon:folder[role=lime] Lime
+icon:folder[role=maroon] Maroon
+icon:folder[role=navy] Navy
+icon:folder[role=olive] Olive
+icon:folder[role=purple] Purple
+icon:folder[role=red] Red
+icon:folder[role=silver] Silver
+icon:folder[role=teal] Teal
+icon:folder[role=white] White
+icon:folder[role=yellow] Yellow
+
 === Footnotes
 
 A footnote footnote:[An example footnote.];
