@@ -80,4 +80,9 @@ When the script completes, you'll see the file sample-book.epub appear in the _o
 * link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
 
 
+==== Convert Markdown to AsciiDoc
+
+* link:https://github.com/opendevise/kramdown-asciidoc[A Kramdown converter for converting Markdown content to AsciiDoc] by Dan Allen
+
+
 include::footer.txt[]
