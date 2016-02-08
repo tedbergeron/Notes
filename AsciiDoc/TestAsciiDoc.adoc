@@ -57,49 +57,60 @@ CAUTION: this is a *caution* admonition paragraph.
 === Inline Icons
 
 * Uses Font Awesome tags http://fortawesome.github.io/Font-Awesome/icons/
-** New icons in Font-Awesome 4.3 do not display in Asciidoctor 1.5.2 yet
+
 * Uses classes named the same as most of the "16 HTML colors" (you could add more in the Asciidoctor style sheet)
 
 
+icon:folder[role=aqua] Aqua
+icon:folder[role=black] Black
+icon:folder[role=blue] Blue
+icon:folder[role=fuchsia] Fuchsia
+icon:folder[role=gray] Gray
+icon:folder[role=green] Green
+icon:folder[role=lime] Lime
+icon:folder[role=maroon] Maroon
 
-icon:question[role=blue] This is the question
 
-icon:bug[role=red] this is a bug
+icon:folder[role=navy] Navy
+icon:folder[role=olive] Olive
+icon:folder[role=purple] Purple
+icon:folder[role=red] Red
+icon:folder[role=silver] Silver
+icon:folder[role=teal] Teal
+icon:folder[role=white] White
+icon:folder[role=yellow] Yellow
 
-icon:flag[role=lime] lime colored flag
+Nicer colors: http://tedbergeron.github.io/AsciidoctorSemanticColors/
 
-icon:check[role=green] this is a checkmark
-
+icon:question[role=blue], icon:bug[role=red], icon:flag[role=lime], icon:check[role=green],
 icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux[], icon:css3[], icon:github-alt[]
 
 icon:bolt[], icon:plane[], icon:plus[], icon:pencil[],
 icon:refresh[], icon:rss[], icon:trash[], icon:ticket[],
 icon:globe[], icon:home[], icon:wrench[], icon:bus[], icon:eur[], icon:cab[], icon:calculator[]
 
-These new icons in font-awesome 4.3 do not display in Asciidoctor 1.5.2:
+New icons in font-awesome 4.3 icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
 
-icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
+New Font Awesome 4.4 icon:hand-rock-o[], icon:hand-paper-o[], icon:hand-scissors-o[], icon:hand-lizard-o[], icon:hand-spock-o[]
 
-New font-awesome 4.4
+Asciidoctor 1.5.4 supports Font Awesome 4.5.0 icon:bluetooth[role=blue], icon:stop-circle[role=red], icon:stop-circle-o[role=red], icon:usb[]
 
-icon:hand-rock-o[], icon:hand-paper-o[], icon:hand-scissors-o[], icon:hand-lizard-o[], icon:hand-spock-o[]
+==== Link an icon
+icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
 
 
 ==== Make icons upto five times bigger
 
-********
-icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
-********
 
 icon:star[3x, role=yellow] the star icon at 3x size.
 
 We icon:heart[lg, role=red, alt=love] words.
 
-icon:heart[border, role=text-accent, alt=love]
-// Border is supposed to start working
+icon:heart[border, role=text-accent, alt=love] with border
 
-==== Link an icon
-icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
+********
+icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
+********
 
 
 === Quotes (with optional icons)
@@ -243,24 +254,6 @@ January,February,March
 65,59,80
 ....
 
-=== Default Colors
-
-icon:folder[role=aqua] Aqua
-icon:folder[role=black] Black
-icon:folder[role=blue] Blue
-icon:folder[role=fuchsia] Fuchsia
-icon:folder[role=gray] Gray
-icon:folder[role=green] Green
-icon:folder[role=lime] Lime
-icon:folder[role=maroon] Maroon
-icon:folder[role=navy] Navy
-icon:folder[role=olive] Olive
-icon:folder[role=purple] Purple
-icon:folder[role=red] Red
-icon:folder[role=silver] Silver
-icon:folder[role=teal] Teal
-icon:folder[role=white] White
-icon:folder[role=yellow] Yellow
 
 === Footnotes
 
@@ -271,4 +264,5 @@ finally a reference to the second footnote footnoteref:[note2].
 === Built in attributes
 .Use built-in attribute: 'asciidoctor-version'
 Document generated with Asciidoctor ver. {asciidoctor-version}
+or use this dynamic badge
 link:http://asciidoctor.org/[image:https://img.shields.io/badge/Asciidoctor-v{asciidoctor-version}-orange.svg[]]
