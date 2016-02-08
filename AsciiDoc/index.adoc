@@ -10,12 +10,14 @@ link:../README.txt[docs icon:home[]]
 * icon:star[role=yellow] https://leanpub.com/awesomeasciidoctornotebook/read[Awesome Asciidoctor Notebook]
 
 * link:ZenWriting.txt[Zen of Writing]
+* link:http://discuss.asciidoctor.org/Hiding-Specific-Admonition-Types-td4124.html[Conditional Directives] create 2 versions from one doc
 
 ==== Examples
 * link:TestAsciiDoc.adoc[Test Page]
 * link:TestWithoutIcons.txt[Test document without icons font]
 * link:AsciiDocBrownBag/deck.html[Reveal slide deck]
 * link:ImageGallery.txt[Image Gallery]
+* link:LineBreaks.txt[Line Breaks]
 * link:markdown.txt[Markdown works too]
 
 
@@ -43,6 +45,32 @@ Samples of HTML output
  > asciidoctor-pdf deck.txt
 
 * e.g. link:AsciiDocBrownBag/deck.pdf[Asciidoctor PDF] rendering the deck.txt file
+
+==== PDF Themes
+
+===== Change Page Size
+
+ :pdf-page-size: A5
+
+Then when you render it
+> asciidoctor-pdf MyTestDocument.adoc
+
+it produces a .pdf with page size 5.83 x 8.27 in
+
+===== Change Fonts
+
+You can change the font by creating a style in a .yml file. You can start with this https://github.com/asciidoctor/asciidoctor-pdf/blob/master/data/themes/base-theme.yml
+
+TIP: Notice the page_size: A4. You could set it here instead of inside your .adoc file
+
+Save base-theme.yml in a directory MyThemes. After you've made your font changes, render it like this
+
+ > asciidoctor-pdf -a pdf-stylesdir=MyThemes -a pdf-style=base MyTestDocument.adoc
+
+The -a pdf-style=base will look for a "base-theme-yml" file in your "MyThemes" directory
+
+For more information about PDF Themes: https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc
+
 
 === Reveal.js print to PDF
 
@@ -79,10 +107,10 @@ When the script completes, you'll see the file sample-book.epub appear in the _o
 * link:Ruby.adoc[Ruby Setup]
 * link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
 
-
 ==== Convert Markdown to AsciiDoc
 
 * link:https://github.com/opendevise/kramdown-asciidoc[A Kramdown converter for converting Markdown content to AsciiDoc] by Dan Allen
+
 
 
 include::footer.txt[]
