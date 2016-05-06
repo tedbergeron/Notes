@@ -13,6 +13,12 @@ toc::[]
 
 == The Dangerous and Thrilling Documentation Chronicles
 
+[source, AsciiDoc]
+----
+#Highlight#
+[lime]#color text lime#
+----
+
 This journey begins on a #bleary Monday# morning.
 
 In AsciiDoc, the main structural element is the paragraph.
@@ -27,18 +33,17 @@ Enter twice, then just keep on typing.
 
 === Level 2 Section
 
-.Unordered list
+.Unordered list with asterisks
 * Learn the AsciiDoc syntax
 ** Install Asciidoctor
 * Write my document
 
-Now ordered lists
-
+.Now ordered lists with dots
 . Edgar Allen Poe
 .. Sheri S. Tepper
 . Bill Bryson
 
-.TODO List
+.TODO List with asterisks and brackets
 * [ ] Check mail
 * [x] Feed dog
 
@@ -48,11 +53,12 @@ TIP: this is a *tip* admonition paragraph.
 
 NOTE: this is a *note* admonition paragraph.
 
+CAUTION: this is a *caution* admonition paragraph.
+
 WARNING: this is a *warning* admonition paragraph.
 
 IMPORTANT: this is a *important* admonition paragraph.
 
-CAUTION: this is a *caution* admonition paragraph.
 
 === Inline Icons
 
@@ -60,6 +66,10 @@ CAUTION: this is a *caution* admonition paragraph.
 
 * Uses classes named the same as most of the "16 HTML colors" (you could add more in the Asciidoctor style sheet)
 
+[source, AsciiDoc]
+----
+icon:folder[role=aqua]
+----
 
 icon:folder[role=aqua] Aqua
 icon:folder[role=black] Black
@@ -80,7 +90,7 @@ icon:folder[role=teal] Teal
 icon:folder[role=white] White
 icon:folder[role=yellow] Yellow
 
-Nicer colors: http://tedbergeron.github.io/AsciidoctorSemanticColors/
+Nicer colors: http://tedbergeron.github.io/AsciidoctorSemanticColors/ requires separate docinfo file with styles.
 
 icon:question[role=blue], icon:bug[role=red], icon:flag[role=lime], icon:check[role=green],
 icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux[], icon:css3[], icon:github-alt[]
@@ -88,6 +98,7 @@ icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux
 icon:bolt[], icon:plane[], icon:plus[], icon:pencil[],
 icon:refresh[], icon:rss[], icon:trash[], icon:ticket[],
 icon:globe[], icon:home[], icon:wrench[], icon:bus[], icon:eur[], icon:cab[], icon:calculator[]
+icon:twitter[role=blue]
 
 New icons in font-awesome 4.3 icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
 
@@ -95,12 +106,26 @@ New Font Awesome 4.4 icon:hand-rock-o[], icon:hand-paper-o[], icon:hand-scissors
 
 Asciidoctor 1.5.4 supports Font Awesome 4.5.0 icon:bluetooth[role=blue], icon:stop-circle[role=red], icon:stop-circle-o[role=red], icon:usb[]
 
+New Font Awesome 4.6 icon:question-circle-o[], icon:braille[], icon:sign-language[]
+
 ==== Link an icon
+
+[source, AsciiDoc]
+----
+icon:tags[role=blue, link=http://example.com]
+----
+
 icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
 
 
-==== Make icons upto five times bigger
+==== Make icons up to five times bigger
 
+[source, AsciiDoc]
+----
+icon:star[3x, role=yellow]
+icon:heart[lg, role=red, alt=love]
+icon:heart[border, role=text-accent, alt=love]
+----
 
 icon:star[3x, role=yellow] the star icon at 3x size.
 
@@ -108,22 +133,33 @@ We icon:heart[lg, role=red, alt=love] words.
 
 icon:heart[border, role=text-accent, alt=love] with border
 
-********
-icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
-********
 
 
 === Quotes (with optional icons)
 
+[source, AsciiDoc]
+----
+icon:quote-right[]
+icon:quote-left[2x]
+----
 
 [quote, Abraham Lincoln, National Cemetery Dedication]
 ____
-icon:quote-left[1x] Four score and seven years ago our fathers brought forth
-on this continent a new nation...icon:quote-right[1x]
+icon:quote-left[] Four score and seven years ago our fathers brought forth
+on this continent a new nation...icon:quote-right[]
 ____
 
+********
+icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
+********
 
 === Emoji
+
+[source, AsciiDoc]
+----
+emoji:heart[lg]
+emoji:violin[]
+----
 
 Emoji extension large heart emoji
 emoji:heart[lg] and more
@@ -211,8 +247,7 @@ this doesn't work because it's not inside a block // <3>
 <3> did not work
 
 
-=== Keyboard macro
-With the keyboard macro *kbd:[]* we can include nicely formatted keyboard shortcuts.
+=== Keyboard, Button, and Menu macro
 
 .Requires these attribute options
 ----
@@ -223,46 +258,122 @@ With the keyboard macro *kbd:[]* we can include nicely formatted keyboard shortc
 ----
 
 
+With the keyboard macro we can include nicely formatted keyboard shortcuts.
+
 .Keyboard macro syntax
+
+[source, AsciiDoc]
+----
+kbd:[Ctrl + Alt + N]
+kbd:[{commandkey} + Shift + N]
+----
+
+Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 
 Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] to access the _Project_ view.
 
 To zoom out press kbd:[Ctrl + -].
 
-Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 
 
 .Button macro syntax
+
+[source, AsciiDoc]
+----
+btn:[OK]
+btn:[Open]
+----
 
 Press the btn:[OK] button when you are finished.
 
 Select a file in the file navigator and click btn:[Open].
 
+
+
 .Menu macro syntax
+
+[source, AsciiDoc]
+----
+menu:File[Save]
+menu:View[Zoom > Reset]
+----
 
 To save the file, select menu:File[Save].
 
 Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
 
 
+=== Defining a blank line alias
+
+If you want to make the source more semantic, you can define an attribute to serve as an alias for a blank line:
+
+.Requires this attribute option
+[source, AsciiDoc]
+----
+:blank: pass:[ +]
+----
+
+Now you can add blank lines:
+
+[source, AsciiDoc]
+----
+{blank}
+{blank}
+----
+
+Voila! You get the same output as when using  +.
+
+NOTE: This technique works with Asciidoctor-PDF
+
+
 === Charts
+
+[source, AsciiDoc]
+----
+[chart,line]
+....
+January,February,March,April,May,June,July
+28,48,40,19,86,27,90
+65,59,80,81,56,55,40
+....
+----
 
 [chart,line]
 ....
-January,February,March
-28,48,40
-65,59,80
+January,February,March,April,May,June,July
+28,48,40,19,86,27,90
+65,59,80,81,56,55,40
+....
+
+[chart,bar]
+....
+Yes,No,Maybe
+57,23,20
 ....
 
 
+You are supposed to be able to do this too. (untested)
+
+ chart::line[data-uri="sample.csv"]
+
+
+
+// leave Footnotes section at the bottom so user can see results at bottom of page.
 === Footnotes
+
+[source, AsciiDoc]
+----
+footnote:[An example footnote.];
+footnoteref:[note2,Second footnote.];
+footnoteref:[note2].
+----
 
 A footnote footnote:[An example footnote.];
 a second footnote with a reference ID footnoteref:[note2,Second footnote.];
 finally a reference to the second footnote footnoteref:[note2].
 
 === Built in attributes
-.Use built-in attribute: 'asciidoctor-version'
-Document generated with Asciidoctor ver. {asciidoctor-version}
+.Use built-in attribute: { asciidoctor-version }
+Document generated with Asciidoctor ver. *{asciidoctor-version}*
 or use this dynamic badge
 link:http://asciidoctor.org/[image:https://img.shields.io/badge/Asciidoctor-v{asciidoctor-version}-orange.svg[]]
