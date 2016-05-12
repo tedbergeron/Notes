@@ -1,6 +1,7 @@
 link:../README.txt[docs icon:home[]]
 
 = Using AsciiDoc
+:experimental:
 
 ==== How-To
 * icon:star[role=yellow] http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
@@ -100,14 +101,29 @@ We also recommend specifying an output directory using the -D option flag.
 When the script completes, you'll see the file sample-book.epub appear in the _output_ directory. Open that file with an EPUB3 reader to view the result.
 
 
+== Other Info
+
 === Command Line to create file with filenames
 
 .Create _index.txt from command prompt
  dir /B /ON > _index.txt
 
 
+=== Gist.Asciidoctor.org
+
+You could imitate link:http://txti.es/about[txti], light weight web pages from Markdown, by using http://gist.asciidoctor.org/
+
+* Start with an AsciiDoc file posted online: https://github.com/tedbergeron/AsciidoctorSemanticColors/blob/gh-pages/index.adoc
+* Paste URL into http://gist.asciidoctor.org/
+* Then use the menu:Share[Short URL > remove header and footer]
+
+Output http://goo.gl/x3J2Xp (notice none of the colors assigned in the docinfo.html are rendered here)
+
+
+
 ==== Tool Setups
 * link:EditorSetupForAsciiDoc.adoc[Editor Setup for AsciiDoc]
+** link:https://asciidoclive.com/edit/scratch/1[AsciiDocLive online editor]
 * link:Ruby.adoc[Ruby Setup]
 * link:BuildingAsciidoctorJS.adoc[Building Asciidoctor.js]
 
