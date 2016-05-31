@@ -216,6 +216,17 @@ a| Cell with a list
 {set:cellbgcolor!}
 |===
 
+.Pseudo Section Break
+[cols="1*^", frame=none]
+|===
+| icon:ellipsis-h[2x]
+|===
+
+You can also center images
+
+image::tiger.png[align="center"]
+
+
 === Interactive Checkboxes
 
 [options=interactive]
