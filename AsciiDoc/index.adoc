@@ -119,7 +119,22 @@ You could imitate link:http://txti.es/about[txti], light weight web pages from M
 
 Output http://goo.gl/x3J2Xp (notice none of the colors assigned in the docinfo.html are rendered here)
 
+=== Using Admonition Icons On GitHub
 
+[source, AsciiDoc]
+----
+\ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+\endif::[]
+----
+
+link:http://mrhaki.blogspot.com/2016/06/awesome-asciidoctor-using-admonition.html[Awesome Asciidoctor: Using Admonition Icons On GitHub]
+
+NOTE: Hubert mentions me by name for some research I did into the icons.
 
 ==== Tool Setups
 * link:EditorSetupForAsciiDoc.adoc[Editor Setup for AsciiDoc]
