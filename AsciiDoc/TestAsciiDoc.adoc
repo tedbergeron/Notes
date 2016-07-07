@@ -1,13 +1,19 @@
 = Rendered with Asciidoctor.js
+Ted Bergeron <example@example.com>
+v1.0, 7/7/2016: My revision remarks here
 :icons: font
+:imagedir: images
+:exampleImage: images/icons/example.png
 :experimental:
 // Define unicode for Apple Command key.
 :commandkey: &#8984;
-:toc: preamble
+:toc: left
 :toc-placement!:
-:status: images/icons/example.png
-The zero heading does not display by default
 
+Preamble: Our intrepid team is in desperate need of double shot mochas, but the milk expired eight days ago.
+A trip to the dairy was out of the question.
+
+// placed TOC after preamble
 toc::[]
 
 
@@ -135,23 +141,26 @@ icon:heart[border, role=text-accent, alt=love] with border
 
 
 
-=== Quotes (with optional icons)
+=== Quotes
 
-[source, AsciiDoc]
-----
-icon:quote-right[]
-icon:quote-left[2x]
-----
 
 [quote, Abraham Lincoln, National Cemetery Dedication]
 ____
-icon:quote-left[] Four score and seven years ago our fathers brought forth
-on this continent a new nation...icon:quote-right[]
+Four score and seven years ago our fathers brought forth
+on this continent a new nation...
 ____
 
-********
+
+[source, AsciiDoc]
+----
+icon:quote-right[2x]
+icon:quote-left[2x]
+----
+
+.with optional icons
+****
 icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
-********
+****
 
 === Emoji
 
@@ -216,15 +225,41 @@ a| Cell with a list
 {set:cellbgcolor!}
 |===
 
+=== Writing
+
+Use this to create a section break in a novel.
+
 .Pseudo Section Break
 [cols="1*^", frame=none]
 |===
 | icon:ellipsis-h[2x]
 |===
 
-You can also center images
+You can also center a hairline image
 
-image::tiger.png[align="center"]
+image::images/tiger.png[Tiger,10,10,align="center"]
+
+==== Attribute: defining a blank line alias
+
+If you want to make the source more semantic, you can define an attribute to serve as an alias for a blank line:
+
+.Requires this attribute option
+[source, AsciiDoc]
+----
+:blank: pass:[ +]
+----
+
+Now you can add blank lines:
+
+[source, AsciiDoc]
+----
+{blank}
+{blank}
+----
+
+Voila! You get the same output as when using  +.
+
+NOTE: This technique works with Asciidoctor-PDF
 
 
 === Interactive Checkboxes
@@ -314,27 +349,6 @@ To save the file, select menu:File[Save].
 Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
 
 
-=== Defining a blank line alias
-
-If you want to make the source more semantic, you can define an attribute to serve as an alias for a blank line:
-
-.Requires this attribute option
-[source, AsciiDoc]
-----
-:blank: pass:[ +]
-----
-
-Now you can add blank lines:
-
-[source, AsciiDoc]
-----
-{blank}
-{blank}
-----
-
-Voila! You get the same output as when using  +.
-
-NOTE: This technique works with Asciidoctor-PDF
 
 
 === Charts
@@ -367,7 +381,22 @@ You are supposed to be able to do this too. (untested)
 
  chart::line[data-uri="sample.csv"]
 
+=== About the Author
 
+You can contact {author} at {email}.
+First name:  {firstname} and last name: {lastname}.
+Also supports {middlename}.
+
+{authorinitials}
+
+
+=== Colophon
+
+Version: {revnumber}
+
+Version Date: {revdate}
+
+Version Notes: {revremark}
 
 // leave Footnotes section at the bottom so user can see results at bottom of page.
 === Footnotes
@@ -383,8 +412,12 @@ A footnote footnote:[An example footnote.];
 a second footnote with a reference ID footnoteref:[note2,Second footnote.];
 finally a reference to the second footnote footnoteref:[note2].
 
-=== Built in attributes
-.Use built-in attribute: { asciidoctor-version }
+=== Attributes
+
+.Custom attributes
+Show the { exampleImage } image:{exampleImage}[]
+
+.Use built-in attribute: `{ asciidoctor-version }`
 Document generated with Asciidoctor ver. *{asciidoctor-version}*
 or use this dynamic badge
 link:http://asciidoctor.org/[image:https://img.shields.io/badge/Asciidoctor-v{asciidoctor-version}-orange.svg[]]
