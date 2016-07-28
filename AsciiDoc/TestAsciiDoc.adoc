@@ -241,6 +241,8 @@ image::images/tiger.png[Tiger,10,10,align="center"]
 
 ==== Attribute: defining a blank line alias
 
+NOTE: This technique works with Asciidoctor-PDF too.
+
 If you want to make the source more semantic, you can define an attribute to serve as an alias for a blank line:
 
 .Requires this attribute option
@@ -259,7 +261,19 @@ Now you can add blank lines:
 
 Voila! You get the same output as when using  +.
 
-NOTE: This technique works with Asciidoctor-PDF
+
+==== Page Breaks in Asciidoctor-PDF
+
+Use the experimental attribute and this page break syntax.
+
+[source, AsciiDoc]
+----
+//include::Chapter1.adoc[]
+<<<
+//include::Chapter2.adoc[]
+----
+
+
 
 
 === Interactive Checkboxes
