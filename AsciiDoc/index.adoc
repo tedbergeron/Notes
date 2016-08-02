@@ -21,6 +21,11 @@ link:../README.txt[docs icon:home[]]
 * link:LineBreaks.txt[Line Breaks]
 * link:markdown.txt[Markdown works too]
 
+==== Asciidoctor-skins
+
+* link:https://github.com/darshandsoni/asciidoctor-skins[icon:github[] darshandsoni/asciidoctor-skins]
+
+
 
 
 === Asciidoctor Rendering HTML
@@ -133,6 +138,8 @@ Output http://goo.gl/x3J2Xp (notice none of the colors assigned in the docinfo.h
 ----
 
 link:http://mrhaki.blogspot.com/2016/06/awesome-asciidoctor-using-admonition.html[Awesome Asciidoctor: Using Admonition Icons On GitHub]
+link: http://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/[same article]
+
 
 NOTE: Hubert mentions me by name for some research I did into the icons.
 
