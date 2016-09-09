@@ -25,6 +25,11 @@ link:../README.txt[docs icon:home[]]
 
 * link:https://github.com/darshandsoni/asciidoctor-skins[icon:github[] darshandsoni/asciidoctor-skins]
 
+==== Asciidoctor-Chrome Extensions
+
+* link:https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia?utm_source=chrome-app-launcher-info-dialog[Asciidoctor.js Live Preview]
+* link:https://chrome.google.com/webstore/detail/copy-as-asciidoc/kabphjofkinmakglobecmbgpbopknobc?utm_source=chrome-app-launcher-info-dialog[Copy as AsciiDoc]
+
 
 
 
@@ -104,6 +109,8 @@ We also recommend specifying an output directory using the -D option flag.
  $ asciidoctor-epub3 -D output data/samples/sample-book.adoc
 
 When the script completes, you'll see the file sample-book.epub appear in the _output_ directory. Open that file with an EPUB3 reader to view the result.
+
+NOTE: Interesting article on https://www.linkedin.com/pulse/ebook-publishing-template-toolchain-jon-archer[eBook publishing template and toolchain | Jon Archer]
 
 
 == Other Info
