@@ -9,6 +9,7 @@ v1.0, 7/7/2016: My revision remarks here
 :commandkey: &#8984;
 :toc: left
 :toc-placement!:
+// source-highlighter  highlightjs
 
 Preamble: Our intrepid team is in desperate need of double shot mochas, but the milk expired eight days ago.
 A trip to the dairy was out of the question.
@@ -37,7 +38,7 @@ Enter at your own risk.
 To start a new paragraph, leave a blank line by hitting
 Enter twice, then just keep on typing.
 
-=== Level 2 Section
+=== Lists
 
 .Unordered list with asterisks
 * Learn the AsciiDoc syntax
@@ -52,6 +53,63 @@ Enter twice, then just keep on typing.
 .TODO List with asterisks and brackets
 * [ ] Check mail
 * [x] Feed dog
+
+
+==== Ordered Lists with content
+
+[procedure]
+.Make a bed
+. Take off the old sheets
++
+Remove the old sheets and put them in the hamper.
+
+. Put on the new sheets
++
+.Do the following sub-steps to finish the procedure
+.. Put on the fitted sheet
+.. Put on the flat sheet
+.. Form hospital corners with the flat sheet.*
+
++
+[role="alternatives"]
+.Do one of the following options but not both
+. Use a blanket.
+. Use a quilt.
+
+==== Ordered Lists with complex content
+
+[.tour]
+. First task
++
+====
+This is all the text which will be highlighted in step 1 with a popup with text Tjos is only a tooltip!
+====
+
+. Second task
++
+====
+You may use complex content:
+
+* yes
+* no
+====
+
+=== Code Blocks
+
+[source, C#]
+----
+using System;
+
+#pragma warning disable 414, 3021
+
+/// <summary>Main task</summary>
+async Task<int> AccessTheWebAsync()
+{
+    Console.WriteLine("Hello, World!");
+    string urlContents = await getStringTask;
+    return urlContents.Length;
+}
+----
 
 === Admonition Blocks
 
