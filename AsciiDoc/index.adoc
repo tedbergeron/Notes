@@ -25,11 +25,6 @@ link:../README.txt[docs icon:home[]]
 
 * link:https://github.com/darshandsoni/asciidoctor-skins[icon:github[] darshandsoni/asciidoctor-skins]
 
-==== Asciidoctor-Chrome Extensions
-
-* link:https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia?utm_source=chrome-app-launcher-info-dialog[Asciidoctor.js Live Preview]
-* link:https://chrome.google.com/webstore/detail/copy-as-asciidoc/kabphjofkinmakglobecmbgpbopknobc?utm_source=chrome-app-launcher-info-dialog[Copy as AsciiDoc]
-
 
 
 
@@ -37,9 +32,9 @@ link:../README.txt[docs icon:home[]]
 
  > asciidoctor testasciidoc.adoc
 
-You can also point to a stylesheet
+You can also point to a stylesheet in same directory
 
- > asciidoctor -a linkcss testasciidoc.adoc
+ > asciidoctor -a stylesheet=colony.css -a stylesdir=./ testasciidoc.adoc
 
 Samples of HTML output
 
@@ -110,8 +105,6 @@ We also recommend specifying an output directory using the -D option flag.
 
 When the script completes, you'll see the file sample-book.epub appear in the _output_ directory. Open that file with an EPUB3 reader to view the result.
 
-NOTE: Interesting article on https://www.linkedin.com/pulse/ebook-publishing-template-toolchain-jon-archer[eBook publishing template and toolchain | Jon Archer]
-
 
 == Other Info
 
@@ -160,6 +153,13 @@ NOTE: Hubert mentions me by name for some research I did into the icons.
 
 * link:https://github.com/opendevise/kramdown-asciidoc[A Kramdown converter for converting Markdown content to AsciiDoc] by Dan Allen
 
+==== Arguments for Asciidoctor
+
+http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/[Why You Shouldn’t Use “Markdown” for Documentation — Eric Holscher] Write The Docs
+
+.Fedora adopts AsciiDoc for their documentation 9/8/2016
+TL;DR: We need semantic markup in the Fedora Docs and probably in other projects. We can do it in AsciiDoc. Here is how.
+http://www.winglemeyer.org/technology/2016/09/08/semantic-asciidoc/[A Semantic Markup Proposal for AsciiDoc]
 
 
 include::footer.txt[]
