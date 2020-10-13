@@ -1,4 +1,4 @@
-= Rendered with Asciidoctor.js
+= icon:folder[role=Yellow] Rendered with Asciidoctor.js
 Ted Bergeron <example@example.com>
 v1.0, 7/7/2016: My revision remarks here
 :icons: font
@@ -9,9 +9,9 @@ v1.0, 7/7/2016: My revision remarks here
 :commandkey: &#8984;
 :toc: left
 :toc-placement!:
-// source-highlighter  highlightjs
+:source-highlighter: highlightjs
 
-Preamble: Our intrepid team is in desperate need of double shot mochas, but the milk expired eight days ago.
+link:../_index.txt[icon:chevron-circle-left[] wiki] | Preamble: Our intrepid team is in desperate need of double shot mochas, but the milk expired eight days ago.
 A trip to the dairy was out of the question.
 
 // placed TOC after preamble
@@ -20,21 +20,16 @@ toc::[]
 
 == The Dangerous and Thrilling Documentation Chronicles
 
-[source, AsciiDoc]
-----
-#Highlight#
-[lime]#color text lime#
-----
 
 This journey begins on a #bleary Monday# morning.
 
-In AsciiDoc, the main structural element is the paragraph.
+In AsciiDoc, the main [role=red]#structural# element is the paragraph.
 A paragraph consists of [lime]#adjacent lines# of text.
 
-
-WARNING: Wolpertingers are known to nest in server racks.
-Enter at your own risk.
-
+[source, AsciiDoc]
+----
+[lime]#color text lime#
+----
 To start a new paragraph, leave a blank line by hitting
 Enter twice, then just keep on typing.
 
@@ -48,6 +43,8 @@ Enter twice, then just keep on typing.
 .Now ordered lists with dots
 . Edgar Allen Poe
 .. Sheri S. Tepper
+... Third
+.... Fourth
 . Bill Bryson
 
 .TODO List with asterisks and brackets
@@ -59,7 +56,7 @@ Enter twice, then just keep on typing.
 
 [procedure]
 .Make a bed
-. Take off the old sheets
+. Take off the old sheets 
 +
 Remove the old sheets and put them in the hamper.
 
@@ -96,18 +93,12 @@ You may use complex content:
 
 === Code Blocks
 
-[source, C#]
+[source, JavaScript]
 ----
-using System;
-
-#pragma warning disable 414, 3021
-
-/// <summary>Main task</summary>
-async Task<int> AccessTheWebAsync()
+// Main task
+function doFunction()
 {
-    Console.WriteLine("Hello, World!");
-    string urlContents = await getStringTask;
-    return urlContents.Length;
+    alert("Hello, World!");
 }
 ----
 
@@ -126,18 +117,13 @@ IMPORTANT: this is a *important* admonition paragraph.
 
 === Inline Icons
 
-* Uses Font Awesome tags http://fortawesome.github.io/Font-Awesome/icons/
+* Uses link:https://fontawesome.com/v4.7.0/icons/[Font Awesome icons *version 4.7*] only
 
 * Uses classes named the same as most of the "16 HTML colors" (you could add more in the Asciidoctor style sheet)
 
-[source, AsciiDoc]
-----
-icon:folder[role=aqua]
-----
-
 icon:folder[role=aqua] Aqua
 icon:folder[role=black] Black
-icon:folder[role=blue] Blue
+icon:folder[role=Navy] Blue
 icon:folder[role=fuchsia] Fuchsia
 icon:folder[role=gray] Gray
 icon:folder[role=green] Green
@@ -145,7 +131,7 @@ icon:folder[role=lime] Lime
 icon:folder[role=maroon] Maroon
 
 
-icon:folder[role=navy] Navy
+icon:folder[role=Navy] Navy
 icon:folder[role=olive] Olive
 icon:folder[role=purple] Purple
 icon:folder[role=red] Red
@@ -154,35 +140,45 @@ icon:folder[role=teal] Teal
 icon:folder[role=white] White
 icon:folder[role=yellow] Yellow
 
+[source, AsciiDoc]
+----
+icon:folder[role=aqua]
+----
+
 Nicer colors: http://tedbergeron.github.io/AsciidoctorSemanticColors/ requires separate docinfo file with styles.
 
-icon:question[role=blue], icon:bug[role=red], icon:flag[role=lime], icon:check[role=green],
+icon:question[role=Navy], icon:bug[role=red], icon:flag[role=lime], icon:check[role=green],
 icon:envelope[] envelope, icon:circle[] circle, icon:html5[role=red], icon:linux[], icon:css3[], icon:github-alt[]
 
 icon:bolt[], icon:plane[], icon:plus[], icon:pencil[],
 icon:refresh[], icon:rss[], icon:trash[], icon:ticket[],
 icon:globe[], icon:home[], icon:wrench[], icon:bus[], icon:eur[], icon:cab[], icon:calculator[]
-icon:twitter[role=blue]
+icon:twitter[role=Navy]
 
-New icons in font-awesome 4.3 icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
+New in Font Awesome 4.3 icon:heartbeat[], icon:motorcycle[], icon:street-view[], icon:ship[]
 
-New Font Awesome 4.4 icon:hand-rock-o[], icon:hand-paper-o[], icon:hand-scissors-o[], icon:hand-lizard-o[], icon:hand-spock-o[]
+New in Font Awesome 4.4 icon:hand-rock-o[], icon:hand-paper-o[], icon:hand-scissors-o[], icon:hand-lizard-o[], icon:hand-spock-o[]
 
-Asciidoctor 1.5.4 supports Font Awesome 4.5.0 icon:bluetooth[role=blue], icon:stop-circle[role=red], icon:stop-circle-o[role=red], icon:usb[]
+New in Font Awesome 4.5.0 icon:bluetooth[role=Navy], icon:stop-circle[role=red], icon:stop-circle-o[role=red], icon:usb[]
 
-New Font Awesome 4.6 icon:question-circle-o[], icon:braille[], icon:sign-language[]
+New in Font Awesome 4.6 icon:question-circle-o[], icon:braille[], icon:sign-language[]
 
 ==== Link an icon
 
+icon:tags[role=Navy, link=http://example.com] tags: ruby, asciidoctor
+
 [source, AsciiDoc]
 ----
-icon:tags[role=blue, link=http://example.com]
+icon:tags[role=Navy, link=http://example.com]
 ----
 
-icon:tags[role=blue, link=http://example.com] tags: ruby, asciidoctor
-
-
 ==== Make icons up to five times bigger
+
+icon:star[3x, role=yellow] the star icon at 3x size.
+
+We icon:heart[lg, role=red, alt=love] words.
+
+icon:heart[border, role=text-accent, alt=love] with border
 
 [source, AsciiDoc]
 ----
@@ -191,46 +187,48 @@ icon:heart[lg, role=red, alt=love]
 icon:heart[border, role=text-accent, alt=love]
 ----
 
-icon:star[3x, role=yellow] the star icon at 3x size.
+=== Horizontal Indent with caption or icon
 
-We icon:heart[lg, role=red, alt=love] words.
+[horizontal]
+icon:check[role=green]::
+_Limit non-essential travel for work. *Travel deemed essential is only permitted if the destination is in a county in Phase II*.  Travel to attend conferences or trainings for professional development is generally not permitted at least through October 2020._
 
-icon:heart[border, role=text-accent, alt=love] with border
-
-
+[source, asciidoc]
+----
+[horizontal]
+icon:check[role=green]::
+----
 
 === Quotes
 
-
-[quote, Abraham Lincoln, National Cemetery Dedication]
+[quote, Abraham Lincoln , National Cemetery Dedication]
 ____
 Four score and seven years ago our fathers brought forth
 on this continent a new nation...
 ____
 
 
-[source, AsciiDoc]
-----
-icon:quote-right[2x]
-icon:quote-left[2x]
-----
-
-.with optional icons
+.icons only
 ****
 icon:quote-left[2x] This is the quote-left and quote right icon:quote-right[2x]
 ****
 
+[source, asciidoc]
+----
+icon:quote-right[2x]
+Paragraph of text here...
+icon:quote-left[2x]
+----
+
 === Emoji
+
+Emoji extension large heart emoji emoji:heart[2x] and more emoji:heart-eyes[], emoji:put-litter-in-its-place[], emoji:us[], emoji:violin[]
 
 [source, AsciiDoc]
 ----
-emoji:heart[lg]
+emoji:heart[2x]
 emoji:violin[]
 ----
-
-Emoji extension large heart emoji
-emoji:heart[lg] and more
-emoji:heart-eyes[], emoji:put-litter-in-its-place[], emoji:us[], emoji:violin[]
 
 === Tables
 
@@ -257,15 +255,15 @@ A,B,C,D
 .Table with AsciiDoc formatting in a cell
 |===
 | First Cell | Second Cell
-| Second Row, first cell
+| Second Row | first cell
 a| Cell with a list
 
 * One
 * two
-* three
+* three | second cell
 |===
 
-.Disable the 100% width on the tables using the %autowidth option.
+.Disable the 100% width on the tables using the `%autowidth` option.
 [%autowidth]
 |===
 | A | B
@@ -331,21 +329,12 @@ Use the experimental attribute and this page break syntax.
 //include::Chapter2.adoc[]
 ----
 
-
-
-
 === Interactive Checkboxes
 
 [options=interactive]
 - [*] checked
 - [x] also checked
 - [ ] not checked
-
-
-### Markdown is rendered by Asciidoctor too
-- one
-- two
-- three
 
 
 === Callout Markers
@@ -368,6 +357,7 @@ this doesn't work because it's not inside a block // <3>
 === Keyboard, Button, and Menu macro
 
 .Requires these attribute options
+[source, asciidoc]
 ----
 // We must enable experimental attribute.
 :experimental:
@@ -379,6 +369,9 @@ this doesn't work because it's not inside a block // <3>
 With the keyboard macro we can include nicely formatted keyboard shortcuts.
 
 .Keyboard macro syntax
+Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
+
+Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] to access the _Project_ view.
 
 [source, AsciiDoc]
 ----
@@ -386,15 +379,14 @@ kbd:[Ctrl + Alt + N]
 kbd:[{commandkey} + Shift + N]
 ----
 
-Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
-
-Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] to access the _Project_ view.
-
 To zoom out press kbd:[Ctrl + -].
 
-
-
 .Button macro syntax
+
+
+Press the btn:[OK] button when you are finished.
+
+Select a file in the file navigator and click btn:[Open].
 
 [source, AsciiDoc]
 ----
@@ -402,13 +394,11 @@ btn:[OK]
 btn:[Open]
 ----
 
-Press the btn:[OK] button when you are finished.
-
-Select a file in the file navigator and click btn:[Open].
-
-
 
 .Menu macro syntax
+To save the file, select menu:File[Save].
+
+Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
 
 [source, AsciiDoc]
 ----
@@ -416,18 +406,20 @@ menu:File[Save]
 menu:View[Zoom > Reset]
 ----
 
-To save the file, select menu:File[Save].
-
-Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
-
-
 
 
 === Charts
 
+[chart, line]
+....
+January,February,March,April,May,June,July
+28,48,40,19,86,27,90
+65,59,80,81,56,55,40
+....
+
 [source, AsciiDoc]
 ----
-[chart,line]
+[chart, line]
 ....
 January,February,March,April,May,June,July
 28,48,40,19,86,27,90
@@ -435,23 +427,16 @@ January,February,March,April,May,June,July
 ....
 ----
 
-[chart,line]
-....
-January,February,March,April,May,June,July
-28,48,40,19,86,27,90
-65,59,80,81,56,55,40
-....
-
-[chart,bar]
+.bar chart doesn't seem to work
+[chart, bar]
 ....
 Yes,No,Maybe
 57,23,20
 ....
 
+You are supposed to be able to import csv too. (untested)
 
-You are supposed to be able to do this too. (untested)
-
- chart::line[data-uri="sample.csv"]
+`[chart, line[data-uri="sample.csv"]]``
 
 === About the Author
 
@@ -470,8 +455,49 @@ Version Date: {revdate}
 
 Version Notes: {revremark}
 
+
+### Markdown is mostly rendered by Asciidoctor too
+//This Markdown H1 works
+//=============
+//This Markdown H2 works
+//-------------
+
+--------------------
+Markdown code block...
+NOTE: Markdown links and images don't work
+[link does not work](https://example.org/ "Example.org")
+![image does not work](images/icons/example.png "Image")
+--------------------
+
+
+- list using dashes
+- dash &copy;
+- _single underscores_ : italic
+- (*single asterisks* : for italic does not work. AsciiDoc conflict)
+- (__double underscores__ : for bold does not work. AsciiDoc conflict)
+- **double asterisks** : is bold
+
++ list with plus sign does not work
++ list with plus sign does not work
+
+Use backtick for code `printf()`.
+
+> This is a Markdown blockquote...
+>
+
+Markdown horizontal rules
+
+---
+- - - 
+
+
+
 // leave Footnotes section at the bottom so user can see results at bottom of page.
 === Footnotes
+
+A footnote footnote:[An example footnote.];
+a second footnote with a reference ID footnoteref:[note2,Second footnote.];
+finally a reference to the second footnote footnoteref:[note2].
 
 [source, AsciiDoc]
 ----
@@ -479,10 +505,6 @@ footnote:[An example footnote.];
 footnoteref:[note2,Second footnote.];
 footnoteref:[note2].
 ----
-
-A footnote footnote:[An example footnote.];
-a second footnote with a reference ID footnoteref:[note2,Second footnote.];
-finally a reference to the second footnote footnoteref:[note2].
 
 === Attributes
 
